@@ -1,0 +1,44 @@
+.hero-container{
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.background{
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.hero-bottom{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    gap: 74px;
+    flex-wrap: wrap;
+}
+
+.hero-shorts{
+    color: white;
+    gap: 4px;
+}
+
+.shorts-span .shorts-icons{
+    font-size: 16px;
+}
+
+.shorts-icons{
+    color: green;
+}
+
+@media (max-width: 767px){
+    .hero-bottom{
+        gap: 5px;
+    }
+}

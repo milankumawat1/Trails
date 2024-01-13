@@ -1,0 +1,44 @@
+.press{
+    padding: 5% 10%;
+    text-align: center;
+
+}
+.press h1{
+  margin-bottom: 40px;
+}
+.press-tabs{
+    justify-content: space-between;
+}
+
+.tab-image{
+  width: 200px;
+}
+.tab-image {
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+.tab-image.active::after {
+    content: 'hr';
+  }
+  
+  .paragraph-container p {
+    display: none;
+  }
+  
+  .paragraph-container p.active {
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+.press-tabs{
+  gap: 24px;
+  overflow: auto;
+}
+.tab-image{
+  width: 100px;
+}
+  }

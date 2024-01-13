@@ -1,0 +1,15 @@
+.pic-advertisement{
+    padding: 5% 10%;
+    gap: 24px;
+    
+}
+.first-advertisement, .second-advertisement{
+    width: 100%;
+    border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+    .pic-advertisement{
+        flex-wrap: wrap;
+    }
+}
