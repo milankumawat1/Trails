@@ -7,7 +7,7 @@ function VacationAll() {
     <div className='vacation'>
         <div className="vacation-inner-container flex">
             <h2>VACATION FOR ALL</h2>
-            <h3 style={{color: "red"}}>Travellers</h3>
+            <h3 className='trav'>Travellers</h3>
 
             <div className="vacation-images flex">
 

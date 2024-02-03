@@ -9,7 +9,7 @@ function Budget() {
     <div className="budget-inner-container flex">
       <div className="upperheading">
             <h2>HOLIDAYS FOR EVERY</h2>
-            <h3 style={{color: "red"}}>budget</h3>
+            <h3 className='trav'>budget</h3>
 
             </div>
 

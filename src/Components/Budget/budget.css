@@ -30,14 +30,23 @@
 
 
 @media (max-width: 767px) {
+    .budget{
+        padding: 5%;
+    }
+    .budget-image-cards{
+       flex-wrap: wrap;
+
+    }
     .budget-image{
-        width: 100%;
+        width: 100px;
     }
-    .image-container{
-        width: 100%;
-        overflow: auto;
+}
+
+@media (max-width: 840px){
+    .budget-image-cards{
+        flex-wrap: wrap;
     }
-    .image-container::-webkit-scrollbar{
-        display: none;
+    .budget-image{
+        width: 120px;
     }
 }

@@ -8,9 +8,9 @@
 }
 
 .company-logo{
-    width: 15%;
+    width: 8%;
     object-fit: contain;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    aspect-ratio: 3/2;
 }
 
 .ls-nav-links{

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
-import './popular.css'
+import "../Categories/Categories-css/category.css";
 import { useState } from 'react';
 import visa from '../../Assets/visa.avif'
 

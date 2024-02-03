@@ -3,13 +3,74 @@
     gap: 24px;
     
 }
+
+.categ-cont{
+    margin: 7% 10%;
+    position: relative;
+    top: -130px;
+}
 .first-advertisement, .second-advertisement{
     width: 100%;
     border-radius: 12px;
 }
 
+.plane-photo{
+    width: 564px;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 108px;
+}
+
+.visa-photo{
+    width: 500px;
+    position: absolute;
+    top: -14px;
+    right: 108px;
+}
+
 @media (max-width: 767px) {
     .pic-advertisement{
         flex-wrap: wrap;
+    }
+    .categ-cont{
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        margin: 0px;
+        align-items: center;
+    }
+    .visa-photo, .plane-photo{
+        width: 100%;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: 40px;
+    }
+    .plane-photo{
+        margin: 0px 0px 0px 80px;
+    }
+}
+
+@media (max-width: 1000px){
+    .categ-cont{
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        margin: 0px;
+        align-items: center;
+    }
+    .visa-photo, .plane-photo{
+        width: 100%;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: 40px;
+    }
+    .plane-photo{
+        margin: 0px 0px 0px 80px;
     }
 }

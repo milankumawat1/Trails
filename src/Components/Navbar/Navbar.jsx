@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoIosHome } from "react-icons/io";
+import {FaPhoneAlt, FaRegHeart } from "react-icons/fa";
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 import logo from '../../Assets/logo.svg'
@@ -13,7 +14,7 @@ function Navbar() {
       <Link to='/' className="ls-link">Home</Link>
       <Link to='/testimonial' className="ls-link">Testimonial</Link>
       <Link to='/' className="ls-link">Contact Us</Link>
-      <Link to='/' className="ls-link">About us</Link>
+      <Link to='/about' className="ls-link">About us</Link>
       </div>
     </div>
     <div className='navbar-mobile'>
@@ -28,15 +29,15 @@ function Navbar() {
 
           <Link to='/testimonial'>
           <div className="navbar-links flex">
-           <IoIosHome></IoIosHome>
+           <FaRegHeart></FaRegHeart>
            <p>Testimonial</p>
           </div>
           </Link>
 
           <a href='/'>
           <div className="navbar-links flex">
-           <IoIosHome></IoIosHome>
-           <p>Explore</p>
+           <FaPhoneAlt></FaPhoneAlt>
+           <p>Call Us</p>
           </div>
           </a>
 

@@ -33,7 +33,7 @@
     text-align: center;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 840px) {
 .press-tabs{
   gap: 24px;
   overflow: auto;

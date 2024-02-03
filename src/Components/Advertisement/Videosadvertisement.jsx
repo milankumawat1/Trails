@@ -7,10 +7,10 @@ function Videosadvertisement() {
     return(
     <div className='pic-advertisement flex'>
     <a href='..'>
-    <video src={video1} className="first-advertisement" preload="auto" autoplay loop playsinline webkit-playsinline x5-playsinline></video>
+    <video src={video1} className="first-advertisement" preload="auto" autoPlay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
     </a>
     <Link to='/testimonial'>
-    <video src={video2} className="second-advertisement" preload="auto" autoplay loop playsinline webkit-playsinline x5-playsinline></video>
+    <video src={video2} className="second-advertisement" preload="auto" autoplay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
     </Link>
 </div>
     )

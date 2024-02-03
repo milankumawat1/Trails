@@ -2,6 +2,7 @@
   border-radius: 12px;
   background-color: #f6edee;
     padding: 5% 10%;
+    margin-top: 10%;
 }
 
 .quick-upper{
@@ -14,7 +15,15 @@
   
 }
 
-.frstimage, .rectimage{
+.quick-short-span{
+  font-size: 14px;
+  font-weight: lighter;
+}
+.quick-card-outer{
+  gap: 40px;
+}
+
+.firstimage, .rectimage{
     width: 370px;
     aspect-ratio: 370/190;
     object-fit: cover;
@@ -60,3 +69,23 @@
     left: 20px;
     color: white;
   }
+
+  div.quick-desc h3{
+    font-size: 22px;
+  }
+
+  div.quick-desc p{
+    font-size: 13px;
+  }
+
+  @media (max-width: 767px){
+   .firstimage, .rectimage, .squareimage{
+    width: 330px;
+   }
+   .secondimage, .thirdimage{
+    width: 150px;
+   }
+   .squareimage{
+    height: 360px;
+   }
+}
