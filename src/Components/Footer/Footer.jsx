@@ -10,6 +10,7 @@ import { CiYoutube } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 // const images=[
 //     {
@@ -92,11 +93,11 @@ function Footer() {
 
         <div className="column flex">
             <h5>Trail</h5>
-            <a href='..'>About us</a>
-            <a href='..'>About us</a>
-            <a href='..'>About us</a>
-            <a href='..'>About us</a>
-            <a href='..'>About us</a>
+            <Link to={'/'}>Home</Link>
+            <Link to={'/about'}>About us</Link>
+            <Link to={'/'}>Contact us</Link>
+            <Link to={'/testimonial'}>Testimonial</Link>
+           
         </div>
 
         <div className="column flex">

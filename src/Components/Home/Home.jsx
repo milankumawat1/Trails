@@ -2,11 +2,11 @@ import React from 'react'
 import Hero from '../Hero/Hero'
 import Popular from '../Categories/Popular';
 import Quick from '../QuickGateways/Quick';
-import Tourism from '../Categories/Tourism';
-import Oceania from '../Categories/Oceania';
-import European from '../Categories/European';
-import SouthEast from '../Categories/SouthEast';
-import Scandinavia from '../Categories/Scandinavia';
+// import Tourism from '../Categories/Tourism';
+// import Oceania from '../Categories/Oceania';
+// import European from '../Categories/European';
+// import SouthEast from '../Categories/SouthEast';
+// import Scandinavia from '../Categories/Scandinavia';
 import Guide from '../Categories/Guide';
 import VacationAll from '../VacationForAll/VacationAll';
 import Budget from '../Budget/Budget';
@@ -22,13 +22,13 @@ function Home() {
     <Quick />
     <VacationAll />
     <Videosadvertisement />
-    <Tourism />
-    <Oceania />
-    <European />
+    {/* <Tourism /> */}
+    {/* <Oceania /> */}
+    {/* <European /> */}
     <Budget />
-    <SouthEast />
+    {/* <SouthEast /> */}
     <Picadvertisement />
-    <Scandinavia />
+    {/* <Scandinavia /> */}
     <Guide />
     <Press />
   </div>

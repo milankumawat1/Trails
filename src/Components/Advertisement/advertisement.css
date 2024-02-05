@@ -8,6 +8,7 @@
     margin: 7% 10%;
     position: relative;
     top: -130px;
+    margin-bottom: 14%;
 }
 .first-advertisement, .second-advertisement{
     width: 100%;
@@ -15,19 +16,19 @@
 }
 
 .plane-photo{
-    width: 564px;
+    width: 690px;
     height: auto;
     z-index: 2;
     position: absolute;
     top: 0;
-    left: 108px;
+ 
 }
 
 .visa-photo{
-    width: 500px;
+    width: 600px;
     position: absolute;
-    top: -14px;
-    right: 108px;
+    top: -18px;
+    left: 58%;
 }
 
 @media (max-width: 767px) {
@@ -47,10 +48,7 @@
         top: 0 !important;
         left: 0 !important;
         right: 0 !important;
-        margin-left: 40px;
-    }
-    .plane-photo{
-        margin: 0px 0px 0px 80px;
+      
     }
 }
 
@@ -61,6 +59,7 @@
         top: 0;
         margin: 0px;
         align-items: center;
+        padding-left: 10%;
     }
     .visa-photo, .plane-photo{
         width: 100%;
@@ -68,9 +67,11 @@
         top: 0 !important;
         left: 0 !important;
         right: 0 !important;
-        margin-left: 40px;
+    
     }
+   
     .plane-photo{
-        margin: 0px 0px 0px 80px;
+        padding-left: 5%;
+        margin-bottom: -20px;
     }
 }

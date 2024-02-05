@@ -3,15 +3,27 @@ import Navbar from "../Components/Navbar/Navbar";
 
 import Card from "../Components/Card/Card";
 import Testimonial from "../Components/Testimonials/Testimonial";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import data from "../Components/Card/Data";
 import Home from "../Components/Home/Home";
 import Aboutus from "../Components/Aboutus/Aboutus";
 import Footer from "../Components/Footer/Footer";
+import { useEffect } from 'react';
+
+function ScrollToTop() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
+  return null;
+}
 
 function Publicroute() {
   return (
     <Router>
+      <ScrollToTop></ScrollToTop>
     <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<Home></Home>} />
