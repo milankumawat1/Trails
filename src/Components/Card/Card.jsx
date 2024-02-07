@@ -51,16 +51,9 @@ function Card({data}) {
  
         <div className="card-price-desc-container flex">
           <h2 className="card-price-desc-heading">PACAKAGE INCLUDES</h2>
-          <p className="card-price-facilities"> <span className="card-price-icon"><FaCheck></FaCheck></span>Speed boat transfer</p>
+          <p className="card-price-facilities"> <span className="card-price-icon"><FaCheck></FaCheck></span>Transport Available</p>
           <p className="card-price-facilities"> <span className="card-price-icon"><FaCheck></FaCheck></span>24x7 Online support</p>
- 
-        <div className="card-price-details">
-         <div className="old-price-detail flex">
-             <p className="old-price">78,999</p>
-             <div className="sale-percentage">45%</div>
-         </div>
-         <p className="new-price">12,432</p>
-        </div>
+
  
         <button className="view-deals-button"
          onClick={()=> window.open(item.document)}>
