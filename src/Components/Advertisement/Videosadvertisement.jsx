@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 function Videosadvertisement() {
     return(
     <div className='pic-advertisement flex'>
-    <a href='..'>
-    <video src={video1} className="first-advertisement" preload="auto" autoPlay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
-    </a>
+    
+    <video src={video1} className="first-advertisement-video" preload="auto" autoPlay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
+  
     <Link to='/testimonial'>
-    <video src={video2} className="second-advertisement" preload="auto" autoplay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
+    <video src={video2} className="second-advertisement-video" preload="auto" autoplay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
     </Link>
 </div>
     )

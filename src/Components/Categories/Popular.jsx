@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import "../Categories/Categories-css/category.css";
 import { useState } from "react";
 import singapore from "../../Assets/singapore.webp";
@@ -68,16 +68,16 @@ function Popular() {
         <div className="categories-upper flex">
           <h2>Most Popular Destinations</h2>
           <div className="categories-destination-upper-icons flex">
-            <FaArrowAltCircleLeft
+            <IoIosArrowBack
               className={`arrow ${currentIndex === 0 ? "disable" : ""}`}
               onClick={prevSlide}
-            ></FaArrowAltCircleLeft>
-            <FaArrowAltCircleRight
+            ></IoIosArrowBack>
+            <IoIosArrowForward
               className={`arrow ${
                 currentIndex === Data.length - 5||Data.length<5 ? "disable" : ""
               }`}
               onClick={nextSlide}
-            ></FaArrowAltCircleRight>
+            ></IoIosArrowForward>
           </div>
         </div>
         <div className="slider-main-wrap">

@@ -8,12 +8,12 @@ function Navbar() {
   return (
     <>
     <div className="ls-navbar flex">
-      <img src={logo} alt="logo" className="company-logo" />
+    <Link to='/'><img src={logo} alt="logo" className="company-logo" /></Link>
 
       <div className="ls-nav-links flex">
       <Link to='/' className="ls-link">Home</Link>
       <Link to='/testimonial' className="ls-link">Testimonial</Link>
-      <Link to='/' className="ls-link">Contact Us</Link>
+      <Link to='/contact' className="ls-link">Contact Us</Link>
       <Link to='/about' className="ls-link">About us</Link>
       </div>
     </div>
@@ -34,12 +34,12 @@ function Navbar() {
           </div>
           </Link>
 
-          <a href='/'>
+          <Link to='/contact'>
           <div className="navbar-links flex">
            <FaPhoneAlt></FaPhoneAlt>
            <p>Call Us</p>
           </div>
-          </a>
+          </Link>
 
         </div>
     </div>

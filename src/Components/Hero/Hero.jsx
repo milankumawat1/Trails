@@ -1,5 +1,5 @@
 import React from "react";
-import background from "../../Assets/background.svg";
+import background from "../../Assets/main-background.webp";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import fagoogle from "../../Assets/fa-google.avif";

@@ -1,7 +1,7 @@
 .hero-container{
     flex-direction: column;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     justify-content: center;
     text-align: center;
 }
@@ -9,7 +9,7 @@
 .background{
     object-fit: cover;
     width: 100%;
-    height: 60%;
+    height: 70%;
     position: absolute;
     z-index: -1;
     opacity: 0.8;
@@ -40,5 +40,8 @@
 @media (max-width: 767px){
     .hero-bottom{
         gap: 20px;
+    }
+    .hero-container{
+        height: 50vh;
     }
 }

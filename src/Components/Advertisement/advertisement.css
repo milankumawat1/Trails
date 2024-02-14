@@ -1,5 +1,5 @@
 .pic-advertisement{
-    padding: 5% 10%;
+    padding: 0% 10%;
     gap: 24px;
     
 }
@@ -14,6 +14,12 @@
     width: 100%;
     border-radius: 12px;
 }
+
+.first-advertisement-video, .second-advertisement-video{
+    width: 564px;
+    border-radius: 12px;
+}
+
 
 .plane-photo{
     width: 690px;
@@ -49,6 +55,9 @@
         left: 0 !important;
         right: 0 !important;
       
+    }
+    .first-advertisement-video, .second-advertisement-video{
+        width: 100%;
     }
 }
 

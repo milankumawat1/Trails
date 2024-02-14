@@ -6,6 +6,7 @@ import hotel2 from '../../Assets/hotel2.webp'
 import hotel3 from '../../Assets/hotel3.webp'
 import hotel4 from '../../Assets/hotel4.webp'
 import hotel5 from '../../Assets/hotel5.webp'
+import hotel6 from '../../Assets/hotel6.webp'
 const images=[
   {
     img1: hotel4,
@@ -23,7 +24,7 @@ const images=[
     img5: hotel5, 
     placename5: '',
     price5: '',
-    img6: hotel5, 
+    img6: hotel6, 
     placename6: '',
     price6: ''
   }
@@ -51,7 +52,7 @@ function Quick() {
   return (
     <div className='quickgateways'>
        <div className="quick-upper flex">
-                <h2>Goa<br></br><span className='quick-short-span'>Ideal for 3-5 days trip</span></h2>
+                <h2>Villa (Goa)<br></br><span className='quick-short-span'>Ideal for 3-5 days trip</span></h2>
                 {/* <div className="popular-destination-upper-icons flex"> */}
                     {/* <FaArrowAltCircleLeft className={`arrow ${currentIndex===0?'disable':''}`} onClick={prevSlide}></FaArrowAltCircleLeft>
                     <FaArrowAltCircleRight className={`arrow ${currentIndex===images.length?'disable':''}`} onClick={nextSlide}></FaArrowAltCircleRight> */}

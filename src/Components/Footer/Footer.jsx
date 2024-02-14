@@ -83,7 +83,7 @@ function Footer() {
          <hr className="partners-underline" />
          <div className="trail-desc flex">
 
-                <p className='desc-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta dolores voluptates esse numquam saepe cumque. Aperiam alias animi nesciunt molestias assumenda cumque laborum, explicabo ut iure maiores beatae, sequi officia ab enim iusto placeat nostrum! Ex, corrupti. Dolor magni suscipit veritatis sit dicta vel libero animi in, itaque repudiandae quos. Repelle</p>
+                <p className='desc-para'>“YOLO TRIPS Pvt. Ltd.” is a professionally managed travel company and offers a broad spectrum of travel and tourism services that includes Corporate Travel (International & Domestic), Leisure Travel, MICE, Foreign Exchange, Car Rentals, Visa & Passport Assistance, Travel Insurance. has its office located at UG-SR 01A Ansal Plaza , Vaishali Sector-1 Ghaziabad. Our team of professionally qualified travel experts provides unmatched quality of service to its customers and their negotiating power in the industry ensures that you get the most competitive prices without any compromises on the quality and thus obtain optimum value for your travel investments.</p>
                 <video src={video} className="footer-vid" preload="auto" autoplay loop playsinline webkit-playsinline x5-playsinline></video>
             
          </div>
@@ -94,17 +94,16 @@ function Footer() {
         <div className="column flex">
             <h5>Trail</h5>
             <Link to={'/'}>Home</Link>
-            <Link to={'/about'}>About us</Link>
-            <Link to={'/'}>Contact us</Link>
+            <Link to={'/contact'}>Contact us</Link>
             <Link to={'/testimonial'}>Testimonial</Link>
            
         </div>
 
         <div className="column flex">
             <h5>Talk to us</h5>
-            <a href='..'><span><CiMail /></span>&nbsp;example@gmail.com</a>
-            <a href='..'><span><MdOutlinePhone /></span>&nbsp;+91384XXXXX</a>
-            <a href='..'><span><FaWhatsapp /></span>&nbsp;+91834XXXXXX</a>
+            <a href="mailto:sales@yolotrips.co.in"><span><CiMail /></span>&nbsp;sales@yolotrips.co.in</a>
+            <a href='tel:+919599006862'><span><MdOutlinePhone /></span>&nbsp;+919599006862</a>
+            <a href='tel:+919910888997'><span><FaWhatsapp /></span>&nbsp;+919910888997</a>
         </div>
 
         <div className="column flex">

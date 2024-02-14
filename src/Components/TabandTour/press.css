@@ -1,3 +1,6 @@
+@import url('https://example.com/sourceSansPro_f37299.css');
+@import url('https://example.com/sourceSansPro_Fallback_f37299.css');
+
 .press{
     padding: 5% 10%;
     text-align: center;
@@ -10,8 +13,29 @@
     justify-content: space-between;
 }
 
+.tab-para{
+ font-family: '__sourceSansPro_f37299', '__sourceSansPro_Fallback_f37299' !important;
+ font-size: 32px;
+ color: grey;
+}
+
 .tab-image{
-  width: 200px;
+  width: 8%;
+  cursor: pointer;
+}
+
+.tab-image3{
+  width: 5%;
+}
+
+.tab-image2{
+  width: 12%;
+  cursor: pointer;
+}
+
+.tab-image4{
+  width: 16%;
+  cursor: pointer;
 }
 .tab-image {
     cursor: pointer;
@@ -38,7 +62,10 @@
   gap: 24px;
   overflow: auto;
 }
-.tab-image{
+.tab-image, .tab-image2, .tab-image3, .tab-image4{
   width: 100px;
+}
+.tab-para{
+  font-size: 22px;
 }
   }

@@ -8,6 +8,7 @@ import data from "../Components/Card/Data";
 import Home from "../Components/Home/Home";
 import Aboutus from "../Components/Aboutus/Aboutus";
 import Footer from "../Components/Footer/Footer";
+import Contact from "../Components/Contact/Contact";
 import { useEffect } from 'react';
 
 function ScrollToTop() {
@@ -30,6 +31,7 @@ function Publicroute() {
 
       <Route path="/category/:category" element={<Card data={data} />} />
       <Route path="/testimonial" element={<Testimonial />} />
+      <Route path="/contact" element={<Contact/>} />
       <Route path="/about" element={<Aboutus></Aboutus>}></Route>
     </Routes>
     <Footer></Footer>

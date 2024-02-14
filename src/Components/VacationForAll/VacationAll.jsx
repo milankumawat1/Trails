@@ -1,8 +1,36 @@
 import React from 'react'
 import '../VacationForAll/vacationall.css'
-import vacation from '../../Assets/travellingvariable.avif'
+import andaman from '../../Assets/Andaman.webp'
+import vietnam from '../../Assets/vietnam.webp'
+import srilanka from '../../Assets/Srilanka.webp'
+import thailand from '../../Assets/thailand.webp'
+import { Link } from 'react-router-dom'
+
+const Data = [
+    {
+      imgsrc: andaman,
+      category: "/category/Andaman",
+      name: "Andaman"
+    }, 
+    {
+      imgsrc: vietnam,
+      category: "/category/Vietnam",
+      name: "Vietnam"
+    }, 
+    {
+      imgsrc: srilanka,
+      category: "/category/Srilanka",
+      name: "Srilanka"
+    }, 
+    {
+      imgsrc: thailand,
+      category: "/category/Thailand",
+      name: "Thailand"
+    }
+  ];
 
 function VacationAll() {
+    
   return (
     <div className='vacation'>
         <div className="vacation-inner-container flex">
@@ -13,33 +41,17 @@ function VacationAll() {
 
                 <div className="vacation-image-cards flex">
 
+                {Data.map(({ imgsrc, category, name }, index) => (
+                     <Link to={category} key={index}>
                     <div className="vacation-card flex">
-                    <img src={vacation} alt="" className="vacation-image" />
+                    <img src={imgsrc} alt="" className="vacation-image" />
                     <div className="vacation-desc-container">
-                        <p>Honeymoon</p>
+                        <p>{name}</p>
                     </div>
                     </div>
+                    </Link>
+                    ))}
 
-                    <div className="vacation-card flex">
-                    <img src={vacation} alt="" className="vacation-image" />
-                    <div className="vacation-desc-container">
-                        <p>Honeymoon</p>
-                    </div>
-                    </div>
-
-                    <div className="vacation-card flex">
-                    <img src={vacation} alt="" className="vacation-image" />
-                    <div className="vacation-desc-container">
-                        <p>Honeymoon</p>
-                    </div>
-                    </div>
-
-                    <div className="vacation-card flex">
-                    <img src={vacation} alt="" className="vacation-image" />
-                    <div className="vacation-desc-container">
-                        <p>Honeymoon</p>
-                    </div>
-                    </div>
                 </div>
             </div>
         </div>

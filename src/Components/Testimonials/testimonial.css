@@ -9,6 +9,7 @@ width: 100%;
  gap: 40px;
  align-items: start;
  position: relative;
+ margin-bottom: 40px;
 }
 
 .square-div{
@@ -16,8 +17,8 @@ width: 100%;
     position: absolute;
     width: 15%;
     height: 50%;
-    background-color: green;
-    bottom: -40px;
+    background-color: #08B367;
+    bottom: -60px;
 }
 
 .testimonial-person-image{
@@ -54,24 +55,24 @@ width: 100%;
 @media only screen and (max-width: 767px){
     .testimonials-outer-container{
         flex-direction: column-reverse;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
     .testimonial-image-container{
         padding: 40px;
     }
     .square-div{
-        height: 25%;
-        width: 25%;
+        height: 22%;
+        width: 30%;
     }
     .testimonial-person-image{
         width: 50%;
         height: 132px;
         object-fit: cover;
-        top: 70%;
+        top: 75%;
         left: 25%;
     }
     .testimonial-rating-div{
-        top: 20px;
+        top: 15px;
         right: 20px;
         left: 80%;
     }

@@ -2,6 +2,10 @@ import React from 'react'
 import '../Budget/budget.css'
 import '../VacationForAll/vacationall.css'
 import bud from '../../Assets/budget.avif'
+import bud2 from '../../Assets/budget2.avif'
+import bud3 from '../../Assets/budget3.avif'
+import bud4 from '../../Assets/budget4.avif'
+import bud5 from '../../Assets/budget5.avif'
 
 function Budget() {
   return (
@@ -21,17 +25,17 @@ function Budget() {
                    
 
                    
-                    <img src={bud} alt="" className="budget-image" />
+                    <img src={bud2} alt="" className="budget-image" />
                 
 
                     
-                    <img src={bud} alt="" className="budget-image" />
+                    <img src={bud3} alt="" className="budget-image" />
                 
 
                     
-                    <img src={bud} alt="" className="budget-image" />
+                    <img src={bud4} alt="" className="budget-image" />
 
-                    <img src={bud} alt="" className="budget-image" />
+                    <img src={bud5} alt="" className="budget-image" />
                     
                 </div>
             </div>

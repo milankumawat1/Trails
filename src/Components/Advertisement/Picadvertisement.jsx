@@ -2,16 +2,17 @@ import React from 'react'
 import '../Advertisement/advertisement.css'
 import best from '../../Assets/bestvalue.avif'
 import flyer from '../../Assets/flyer.avif'
+import { Link } from 'react-router-dom'
 
 function Picadvertisement() {
   return (
     <div className='pic-advertisement flex'>
-        <a href='..'>
+        <Link to='/contact'>
         <img src={best} alt="" className="first-advertisement" />
-        </a>
-        <a href='..'>
+        </Link>
+        <Link to='/contact'>
         <img src={flyer} alt="" className="second-advertisement" />
-        </a>
+        </Link>
     </div>
   )
 }
