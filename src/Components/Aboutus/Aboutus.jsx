@@ -16,7 +16,7 @@ function Aboutus() {
            
            <div className="about-inner-containers flex">
             <img src={logo} alt="" className="about-column reflect-photo" />
-            <p className="column-para">“YOLO TRIPS Pvt. Ltd.” is a professionally managed travel company and offers a broad spectrum of travel and tourism services that includes Corporate Travel (International & Domestic),  Leisure Travel, MICE, Foreign Exchange, Car Rentals, Visa & Passport Assistance, Travel Insurance. has its office located at UG-SR 01A Ansal Plaza , Vaishali Sector-1 Ghaziabad. Our team of professionally qualified travel experts provides unmatched quality of service to its customers and their negotiating power in the industry ensures that you get the most competitive prices without any compromises on the quality and thus obtain optimum value for your travel investments.
+            <p className="column-para">“YOLO TRIPS” is a professionally managed travel company and offers a broad spectrum of travel and tourism services that includes Corporate Travel (International & Domestic),  Leisure Travel, MICE, Foreign Exchange, Car Rentals, Visa & Passport Assistance, Travel Insurance. has its office located in Vaishali Ghaziabad. Our team of professionally qualified travel experts provides unmatched quality of service to its customers and their negotiating power in the industry ensures that you get the most competitive prices without any compromises on the quality and thus obtain optimum value for your travel investments.
             </p>
            </div>
 

@@ -33,7 +33,7 @@ function Contact() {
 
           <div className="contact-desc-column">
             <div className="contact-desc-heading">Social links</div>
-            <a className='cont-links' href='..'><span><LuFacebook></LuFacebook></span>&nbsp;<a className='cont-links' href='..'><span><FaInstagram></FaInstagram></span>&nbsp;</a> <a className='cont-links' href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> <a className='cont-links' href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> <a className='cont-links' href='..'><span><CiTwitter></CiTwitter></span>&nbsp;</a></a>
+            <a className='cont-links' href='..'><span><LuFacebook></LuFacebook></span>&nbsp;<a className='cont-links' href='https://www.instagram.com/yolotripss?igsh=MWliZ3R4Y28wb3AxZg%3D%3D&utm_source=qr'><span><FaInstagram></FaInstagram></span>&nbsp;</a> <a className='cont-links' href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> <a className='cont-links' href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> <a className='cont-links' href='..'><span><CiTwitter></CiTwitter></span>&nbsp;</a></a>
           </div>
 
         </div>

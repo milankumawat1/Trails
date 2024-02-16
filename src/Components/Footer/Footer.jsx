@@ -108,7 +108,7 @@ function Footer() {
 
         <div className="column flex">
             <h5>Social</h5>
-            <a href='..'><span><LuFacebook></LuFacebook></span>&nbsp;<a href='..'><span><FaInstagram></FaInstagram></span>&nbsp;</a> <a href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> <a href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> <a href='..'><span><CiTwitter></CiTwitter></span>&nbsp;</a></a>
+            <a href='..'><span><LuFacebook></LuFacebook></span>&nbsp;<a href='https://www.instagram.com/yolotripss?igsh=MWliZ3R4Y28wb3AxZg%3D%3D&utm_source=qr'><span><FaInstagram></FaInstagram></span>&nbsp;</a> <a href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> <a href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> <a href='..'><span><CiTwitter></CiTwitter></span>&nbsp;</a></a>
             {/* <a href='..'><span><FaInstagram></FaInstagram></span>&nbsp;</a> */}
             {/* <a href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> */}
             {/* <a href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> */}
