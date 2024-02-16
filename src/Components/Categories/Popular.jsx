@@ -4,7 +4,6 @@ import "../Categories/Categories-css/category.css";
 import { useState } from "react";
 import singapore from "../../Assets/singapore.webp";
 import { Link } from "react-router-dom";
-import himachal from '../../Assets/himachal.webp'
 import bali from '../../Assets/bali.webp'
 import dubai from '../../Assets/dubai.webp'
 import andaman from '../../Assets/Andaman.webp'
@@ -17,10 +16,6 @@ const Data = [
   {
     imgsrc: singapore,
     category: "/category/Singapore",
-  },
-  {
-    imgsrc: himachal,
-    category: "/category/Himachal",
   },
   {
     imgsrc: bali,

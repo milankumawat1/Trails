@@ -83,7 +83,7 @@ function Footer() {
          <hr className="partners-underline" />
          <div className="trail-desc flex">
 
-                <p className='desc-para'>“YOLO TRIPS Pvt. Ltd.” is a professionally managed travel company and offers a broad spectrum of travel and tourism services that includes Corporate Travel (International & Domestic), Leisure Travel, MICE, Foreign Exchange, Car Rentals, Visa & Passport Assistance, Travel Insurance. has its office located at UG-SR 01A Ansal Plaza , Vaishali Sector-1 Ghaziabad. Our team of professionally qualified travel experts provides unmatched quality of service to its customers and their negotiating power in the industry ensures that you get the most competitive prices without any compromises on the quality and thus obtain optimum value for your travel investments.</p>
+                <p className='desc-para'>“YOLO TRIPS” is a professionally managed travel company and offers a broad spectrum of travel and tourism services that includes Corporate Travel (International & Domestic), Leisure Travel, MICE, Foreign Exchange, Car Rentals, Visa & Passport Assistance, Travel Insurance. has its office located in Vaishali Ghaziabad. Our team of professionally qualified travel experts provides unmatched quality of service to its customers and their negotiating power in the industry ensures that you get the most competitive prices without any compromises on the quality and thus obtain optimum value for your travel investments.</p>
                 <video src={video} className="footer-vid" preload="auto" autoplay loop playsinline webkit-playsinline x5-playsinline></video>
             
          </div>
@@ -92,7 +92,7 @@ function Footer() {
          <div className="footer-main-content flex">
 
         <div className="column flex">
-            <h5>Trail</h5>
+            {/* <h5>Trail</h5> */}
             <Link to={'/'}>Home</Link>
             <Link to={'/contact'}>Contact us</Link>
             <Link to={'/testimonial'}>Testimonial</Link>
@@ -108,11 +108,11 @@ function Footer() {
 
         <div className="column flex">
             <h5>Social</h5>
-            <a href='..'><span><LuFacebook></LuFacebook></span>&nbsp;facebook</a>
-            <a href='..'><span><FaInstagram></FaInstagram></span>&nbsp;Instagram</a>
-            <a href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;Linkedin</a>
-            <a href='..'><span><CiYoutube></CiYoutube></span>&nbsp;Youtube</a>
-            <a href='..'><span><CiTwitter></CiTwitter></span>&nbsp;Twitter</a>
+            <a href='..'><span><LuFacebook></LuFacebook></span>&nbsp;<a href='..'><span><FaInstagram></FaInstagram></span>&nbsp;</a> <a href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> <a href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> <a href='..'><span><CiTwitter></CiTwitter></span>&nbsp;</a></a>
+            {/* <a href='..'><span><FaInstagram></FaInstagram></span>&nbsp;</a> */}
+            {/* <a href='..'><span><CiLinkedin></CiLinkedin></span>&nbsp;</a> */}
+            {/* <a href='..'><span><CiYoutube></CiYoutube></span>&nbsp;</a> */}
+            {/* <a href='..'><span><CiTwitter></CiTwitter></span>&nbsp;</a> */}
         </div>
          </div>
 

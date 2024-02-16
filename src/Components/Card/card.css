@@ -2,6 +2,10 @@
     padding: 5% 10%;
 }
 
+.card-buttons-box{
+    margin-top: 20px;
+    gap: 20px;
+}
 .card{
     width: 100%;
     border: 1px solid gray;

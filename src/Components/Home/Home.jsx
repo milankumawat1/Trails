@@ -25,12 +25,12 @@ function Home() {
     {/* <Tourism /> */}
     {/* <Oceania /> */}
     {/* <European /> */}
-    <Budget />
+    {/* <Budget /> */}
     {/* <SouthEast /> */}
-    <Picadvertisement />
+    {/* <Picadvertisement /> */}
     {/* <Scandinavia /> */}
-    <Guide />
-    <Press />
+    {/* <Guide /> */}
+    {/* <Press /> */}
   </div>
   )
 }

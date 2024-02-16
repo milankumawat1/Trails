@@ -52,7 +52,7 @@ function Quick() {
   return (
     <div className='quickgateways'>
        <div className="quick-upper flex">
-                <h2>Villa (Goa)<br></br><span className='quick-short-span'>Ideal for 3-5 days trip</span></h2>
+                <h2>Luxury Villas<br></br></h2>
                 {/* <div className="popular-destination-upper-icons flex"> */}
                     {/* <FaArrowAltCircleLeft className={`arrow ${currentIndex===0?'disable':''}`} onClick={prevSlide}></FaArrowAltCircleLeft>
                     <FaArrowAltCircleRight className={`arrow ${currentIndex===images.length?'disable':''}`} onClick={nextSlide}></FaArrowAltCircleRight> */}

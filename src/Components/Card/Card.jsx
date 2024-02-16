@@ -4,7 +4,7 @@ import { SlSocialGoogle } from "react-icons/sl";
 import { FaCheck } from "react-icons/fa6";
 import '../Card/card.css'
 import { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 function Card({data}) {
   const {category}= useParams();
@@ -50,14 +50,20 @@ function Card({data}) {
         </div>
  
         <div className="card-price-desc-container flex">
-          <h2 className="card-price-desc-heading">PACAKAGE INCLUDES</h2>
+          <h2 className="card-price-desc-heading">PACKAGE INCLUDES</h2>
           <p className="card-price-facilities"> <span className="card-price-icon"><FaCheck></FaCheck></span>Transport Available</p>
           <p className="card-price-facilities"> <span className="card-price-icon"><FaCheck></FaCheck></span>24x7 Online support</p>
 
- 
+           <div className='card-buttons-box flex'>
         <button className="view-deals-button"
          onClick={()=> window.open(item.document)}>
-          View Deal</button>
+          Click here</button>
+        
+          <Link to='/contact'>
+          <button className="view-deals-button">
+          Inquire now</button>
+          </Link>
+          </div>
         </div>
      </div>
       ))

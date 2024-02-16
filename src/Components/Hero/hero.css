@@ -24,6 +24,10 @@
     flex-wrap: wrap;
 }
 
+.hero-head{
+    color: white;
+}
+
 .hero-shorts{
     color: white;
     gap: 4px;

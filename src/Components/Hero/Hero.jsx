@@ -10,7 +10,7 @@ function Hero() {
     <div className="hero">
       <div className="hero-container flex">
         <img className="background" src={background} alt="background" />
-        <h1>Plan Your Next Hassle free holiday</h1>
+        <h1 className="hero-head">Plan Your Next Hassle free holiday</h1>
       </div>
       <div className="hero-bottom flex">
         <div className="hero-shorts flex">
