@@ -1,7 +1,7 @@
 .footer{
     background-color: black;
     color: white;
-    padding: 5% 10%;
+    padding: 5% 0%;
     margin-top: 8%;
 }
 
@@ -20,15 +20,15 @@
 }
 
 .partners-underline{
-    width: 100%;
+    width: 80%;
     height: 1px;
-    margin: 20px 0px;
-   
+    margin: 20px auto;
     color: gray;
 }
 
 .trail-desc{
   justify-content: space-between;
+  padding: 0% 10%;
 }
 
 .desc-para{
@@ -54,6 +54,7 @@ a{
     justify-content: space-between;
     align-items: start;
     padding: 20px;
+    padding: 0% 10%;
 }
 
 @media (max-width: 767px){

@@ -4,6 +4,11 @@
     
 }
 
+.vid-advertisement{
+    padding: 0% 5% 0% 12%;
+    gap: 24px;
+}
+
 .categ-cont{
     margin: 7% 10%;
     position: relative;

@@ -5,7 +5,7 @@ import video2 from '../../Assets/secondvideo.mp4'
 import { Link } from 'react-router-dom'
 function Videosadvertisement() {
     return(
-    <div className='pic-advertisement flex'>
+    <div className='vid-advertisement flex'>
     
     <video src={video1} className="first-advertisement-video" preload="auto" autoPlay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
   

@@ -55,10 +55,13 @@ function Card({data}) {
           <p className="card-price-facilities"> <span className="card-price-icon"><FaCheck></FaCheck></span>24x7 Online support</p>
 
            <div className='card-buttons-box flex'>
-        <button className="view-deals-button"
-         onClick={()=> window.open(item.document)}>
-          Click here</button>
-        
+           {item.document ? (
+                  <button className="view-deals-button" onClick={() => window.open(item.document)}>Click here</button>
+                ) : item.link ? (
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <button className="view-deals-button">Click here</button>
+                  </a>
+                ) : null}
           <Link to='/contact'>
           <button className="view-deals-button">
           Inquire now</button>

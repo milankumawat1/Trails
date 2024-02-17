@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Footer/footer.css'
-import company from '../../Assets/company.avif'
+import company from '../../Assets/PartneredCompanies.webp'
 import video from '../../Assets/secondvideo.mp4'
 import { CiMail } from "react-icons/ci";
 import { MdOutlinePhone } from "react-icons/md";

@@ -1,10 +1,18 @@
 .quickgateways{
   border-radius: 12px;
   background-color: #f6edee;
-    padding: 5% 10%;
+    padding: 5% 10% 1% 10%;
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
 }
 
+.villas-button{
+  margin: 40px auto;
+  padding: 20px 40px;
+  border-radius: 12px;
+}
 .quick-upper{
   justify-content: space-between;
   margin-bottom: 10px;

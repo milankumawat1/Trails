@@ -66,8 +66,28 @@ import Andaman4 from '../../Assets/pdf/Andaman/Andaman 4.pdf'
 import a1 from '../../Assets/pdf/Andaman/a1.webp'
 import a2 from '../../Assets/pdf/Andaman/a2.webp'
 import a3 from '../../Assets/pdf/Andaman/a3.webp'
-
-
+import g1 from '../../Assets/g1.webp'
+import g2 from '../../Assets/g2.webp'
+import g3 from '../../Assets/g3.webp'
+import g4 from '../../Assets/g4.webp'
+import g5 from '../../Assets/g5.webp'
+import g6 from '../../Assets/g6.webp'
+import g7 from '../../Assets/g7.webp'
+import g8 from '../../Assets/g8.webp'
+import g9 from '../../Assets/g9.webp'
+import g10 from '../../Assets/g10.webp'
+import g11 from '../../Assets/g11.webp'
+import g12 from '../../Assets/g12.webp'
+import g13 from '../../Assets/g13.webp'
+import g14 from '../../Assets/g14.webp'
+import g15 from '../../Assets/g15.webp'
+import g16 from '../../Assets/g16.webp'
+import g17 from '../../Assets/g17.webp'
+import g18 from '../../Assets/g18.webp'
+import g19 from '../../Assets/g19.webp'
+import g20 from '../../Assets/g20.webp'
+import g21 from '../../Assets/g21.webp'
+import g22 from '../../Assets/g22.webp'
 
 const data=[
     // Singapore  Start-------------------------------------------
@@ -413,6 +433,206 @@ const data=[
     document: Andaman4
 },
 
+//---------- Goa Villas start-------------------------------------
+
+{
+    imgsrc: g1,
+    title: '1 BHK LUXURY BELLA SERVICED APARTMENT @ CANDOLIM',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Bella Serviced Apartment', 
+    facilities:['Kitchen', 'Wifi', 'Free parking on premises', 'Dedicated workspace','Pool','Lift','TV','Air Conditioning'],
+    link: 'https://www.airbnb.co.uk/rooms/46983434?source_impression_id=p3_1708161260_aOpb1%2FcR1%2BSqI2wk'
+},
+{
+    imgsrc: g2,
+    title: '2BHK Luxury Serviced Beach Apartment @ Calangute',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Calangute', 
+    facilities:['Smoking allowed', 'Gym','Free parking on premises', 'TV','Pool'],
+    link: 'https://www.airbnb.co.uk/rooms/46982034?source_impression_id=p3_1708161743_tbPIlYdiLkp%2FqC88'
+},
+{
+    imgsrc: g3,
+    title: '2 BHK Luxury Serviced Apartment @ Calangute',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Calangute', 
+    facilities:['Kitchen', 'Wifi', 'Free parking on premises', 'Garden','Washing Machine','Dryer','Pool','Lift','TV','Air Conditioning'],
+    link: 'https://www.airbnb.co.uk/rooms/908495435398144929?source_impression_id=p3_1708161743_UbshHK%2Bohort39iJ'
+},
+{
+    imgsrc: g4,
+    title: '2 BHK Silver Park Apartment At Calangute No.2(A)',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Calangute', 
+    facilities:['Kitchen', 'Wifi', 'Free parking on premises', 'Garden','Washing Machine','Dryer','Pool','Lift','TV','Air Conditioning'],
+    link: 'https://www.airbnb.co.uk/rooms/25431972?source_impression_id=p3_1708161743_%2Bf0%2FQYguYjKuipEp'
+},
+{
+    imgsrc: g5,
+    title: '2 BHK Super Luxary Silver Park Apartment Near Beach',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Silver Park serviced Apartments', 
+    facilities:['Kitchen', 'Wifi','Washing Machine','Hair Dryer','Pool','Lift','TV','Air Conditioning'],
+    link: 'https://www.airbnb.co.uk/rooms/39096552?source_impression_id=p3_1708161743_OVpuL5eWYHf42zbf'
+},
+{
+    imgsrc: g6,
+    title: '2 BHK Exotic Waves Luxury Apartment in Calangute',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: ' Calangute', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Hair Dryer','Pool','TV','Air Conditioning','Microwave'],
+    link: 'https://www.airbnb.co.uk/rooms/24762097?source_impression_id=p3_1708161743_PIrQzwufK8708uMr'
+},
+{
+    imgsrc: g7,
+    title: '2 Luxurious 5 BHK Private Pool BEACH Villa @ BAGA',
+    category: 'villas',
+    hotelrating: '3.3',
+    hotel: 'Baga', 
+    facilities:['Beach access – Beachfront','Kitchen', 'Wifi','Free parking on premises','Private Pool','TV','Air Conditioning','Gym','Smoking allowed'],
+    link: 'https://www.airbnb.co.uk/rooms/40217511?source_impression_id=p3_1708161743_k9cAAAybSVEyB5Ew'
+},
+{
+    imgsrc: g8,
+    title: '10 BHK Luxury Apartment @ Candolim For 20 Guest',
+    category: 'villas',
+    hotelrating: '5',
+    hotel: 'Silver Park serviced Apartments', 
+    facilities:['Luggage drop-off allowed','Dryer','Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning','Lift','Washing Machine'],
+    link: 'https://www.airbnb.co.uk/rooms/38639720?source_impression_id=p3_1708161743_pjPV08%2B50c8a%2FaoQ'
+},
+{
+    imgsrc: g9,
+    title: '2 BHK Exotic Waves Luxury Apartment in Calangute-1',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Silver Park serviced Apartments', 
+    facilities:['Hair Dryer','Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning'],
+    link: 'https://www.airbnb.co.uk/rooms/25468484?source_impression_id=p3_1708161743_1RSxKt7RCmG4jybp'
+},
+{
+    imgsrc: g10,
+    title: '2 BHK Silver Park Apartment At Calangute No.2(B)',
+    category: 'villas',
+    hotelrating: '4.7',
+    hotel: 'Silver Park serviced Apartments', 
+    facilities:['Hair Dryer','Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning','Lift','Washing Machine','Gym'],
+    link: 'https://www.airbnb.co.uk/rooms/40218123?source_impression_id=p3_1708161743_%2FXte6pwF9DTAANhN'
+},
+{
+    imgsrc: g11,
+    title: '2 BHK Exotic Waves Luxury Apartment - Unit 2',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Calangute', 
+    facilities:['Hair Dryer','Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning'],
+    link: 'https://www.airbnb.co.uk/rooms/25243096?source_impression_id=p3_1708161743_TDD3SsYvWZuD7U2B'
+},
+{
+    imgsrc: g12,
+    title: '4 BHK Private Pool Luxury Villa Marigold',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Villa Marigold', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning','Smoking allowed'],
+    link: 'https://www.airbnb.co.uk/rooms/52157347?source_impression_id=p3_1708161743_gjh1N3EMWNzWrVaI'
+},
+{
+    imgsrc: g13,
+    title: '8 BHK Luxe Private Pool villa at Candolim',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Candolim', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Washing Machine','Air Conditioning','Smoking allowed'],
+    link: 'https://www.airbnb.co.uk/rooms/988245055439993783?source_impression_id=p3_1708163854_HB45x4%2B%2BKdQyHsEd'
+},
+{
+    imgsrc: g14,
+    title: '4 BHK Boulevard villa in Goa',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Washing Machine','Air Conditioning','Smoking allowed','Microwave'],
+    link: 'https://www.airbnb.co.uk/rooms/967329493186796393?source_impression_id=p3_1708163854_tYH9HkWL8NzR%2BNsL'
+},
+{
+    imgsrc: g15,
+    title: '4 BHK Super Luxury Apartment @ Candolim',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Silver Park serviced Apartments', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Lift','Washing Machine','Air Conditioning','Dryer'],
+    link: 'https://www.airbnb.co.uk/rooms/29982188?source_impression_id=p3_1708163854_o1U8ktTgCWcOS2ci'
+},
+{
+    imgsrc: g16,
+    title: '6 BHK Super Luxury Villa @ Baga',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Private Pool','TV','Washing Machine','Air Conditioning','Smoking allowed'],
+    link: 'https://www.airbnb.co.uk/rooms/46840928?source_impression_id=p3_1708164328_lzDsxrXbe8HDGYnp'
+},
+{
+    imgsrc: g17,
+    title: '4 BHK Villa Orchid-Private Pool',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Villa Orchid', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Washing Machine','Air Conditioning','Smoking allowed'],
+    link: 'https://www.airbnb.co.uk/rooms/907831734575822377?source_impression_id=p3_1708164328_%2BjO5MkvvGVlwb9pD'
+},
+{
+    imgsrc: g18,
+    title: '2 BHK Luxury Serviced Apartment @ Baga',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Dedicated workspace','Free parking on premises','Pool','TV','Air Conditioning','Lift'],
+    link: 'https://www.airbnb.co.uk/rooms/47047646?source_impression_id=p3_1708164328_Yc0ul%2FGI95%2B5UMCy'
+},
+{
+    imgsrc: g19,
+    title: '3 BHK Luxury brand New Private PoolVilla @ Baga',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning','Smoking allowed'],
+    link: 'https://www.airbnb.co.uk/rooms/47842682?source_impression_id=p3_1708164328_YCoFygqkamKFj0mG'
+},
+{
+    imgsrc: g20,
+    title: '6 BHK Private Pool Beach Villa @ Baga',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning','Smoking allowed','Private patio or balcony','Washing Machine'],
+    link: 'https://www.airbnb.co.uk/rooms/46685605?source_impression_id=p3_1708164328_RuQCKJgcAta8mqkp'
+},
+{
+    imgsrc: g21,
+    title: '6 BHK Celebrity Ultra Luxury Villa at Baga',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Free parking on premises','Pool','TV','Air Conditioning','Smoking allowed','Microwave','Washing Machine'],
+    link: 'https://www.airbnb.co.uk/rooms/47913801?source_impression_id=p3_1708164328_Njel745UH9%2FjFsBY'
+},
+{
+    imgsrc: g22,
+    title: '3 BHK Ultra Luxury Beach Villa @ Baga',
+    category: 'villas',
+    hotelrating: '4.6',
+    hotel: 'Baga', 
+    facilities:['Kitchen', 'Wifi','Dedicated workspace','Free parking on premises','Pool','TV','Air Conditioning','Hair Dryer','Washing Machine'],
+    link: 'https://www.airbnb.co.uk/rooms/46935497?source_impression_id=p3_1708164328_FNwm9f%2B%2B6so9m9YC'
+}
 ]
 
 export default data;

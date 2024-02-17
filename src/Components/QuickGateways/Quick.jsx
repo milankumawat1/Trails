@@ -7,6 +7,7 @@ import hotel3 from '../../Assets/hotel3.webp'
 import hotel4 from '../../Assets/hotel4.webp'
 import hotel5 from '../../Assets/hotel5.webp'
 import hotel6 from '../../Assets/hotel6.webp'
+import { Link } from 'react-router-dom'
 const images=[
   {
     img1: hotel4,
@@ -26,7 +27,8 @@ const images=[
     price5: '',
     img6: hotel6, 
     placename6: '',
-    price6: ''
+    price6: '',
+    category: "/category/villas",
   }
 ]
 
@@ -69,17 +71,13 @@ function Quick() {
                 images.map((imagesObject, index)=>(
                   <div key={index} className='quick-card-outer flex'>                    
                   <div className="first-card flex">
-                    <a href='https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3'>
+                  <Link to={imagesObject.category} key={index}>
                     <div className="quick-card-image-container">
                      <img  src={imagesObject.img1} alt="img" className="firstimage" />
-                     <div className="quick-desc">
-                      <h3>{imagesObject.placename1}</h3>
-                      <p>{imagesObject.price1}</p>
                      </div>
-                     </div>
-                     </a>
+                     </Link>
     
-                     <a href='https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3'>
+                     <Link to={imagesObject.category} key={index}>
                     <div className="quick-card-image-container">
                      <img src={imagesObject.img2} alt="img" className="secondimage" />
                      <div className="quick-desc">
@@ -87,9 +85,9 @@ function Quick() {
                       <p>{imagesObject.price2}</p>
                      </div>
                      </div>
-                     </a>
+                     </Link>
     
-                     <a href='https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3'>
+                     <Link to={imagesObject.category} key={index}>
                     <div className="quick-card-image-container">
                      <img src={imagesObject.img3} alt="" className="thirdimage" />
                      <div className="quick-desc">
@@ -97,12 +95,12 @@ function Quick() {
                       <p>{imagesObject.price3}</p>
                      </div>
                      </div>
-                     </a>
+                     </Link>
                   </div>
     
                  
                   <div className="second-card">
-                     <a href='https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3'>
+                  <Link to={imagesObject.category} key={index}>
                     <div className="quick-card-image-container">
                      <img key={index} src={imagesObject.img4} alt="" className="squareimage" />
                      <div className="quick-desc">
@@ -110,12 +108,12 @@ function Quick() {
                       <p>{imagesObject.price4}</p>
                      </div>
                      </div>
-                     </a>
+                     </Link>
                   </div>
                   
     
                   <div className="third-card flex">
-                  <a href='https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3'>
+                  <Link to={imagesObject.category} key={index}>
                     <div className="quick-card-image-container">
                      <img key={index} src={imagesObject.img5} alt="" className="rectimage" />
                      <div className="quick-desc">
@@ -123,9 +121,9 @@ function Quick() {
                       <p>{imagesObject.price5}</p>
                      </div>
                      </div>
-                     </a>
+                     </Link>
     
-                     <a href='https://www.airbnb.co.uk/rooms/967329493186796393?adults=1&viralityEntryPoint=1&s=76&unique_share_id=C51AF008-BEAC-4D0C-9551-CE6FC9FA7C4F&_branch_match_id=1277319689636390144&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdUPTHYMcPZxdCt2TwIAIHj%2BDxsAAAA%3D&source_impression_id=p3_1705774972_w%2FeapWyfPcN1nws3'>
+                     <Link to={imagesObject.category} key={index}>
                     <div className="quick-card-image-container">
                      <img key={index} src={imagesObject.img6} alt="" className="rectimage" />
                      <div className="quick-desc">
@@ -133,7 +131,7 @@ function Quick() {
                       <p>{imagesObject.price6}</p>
                      </div>
                      </div>
-                     </a>
+                     </Link>
                   </div>
                   </div>
 
@@ -210,8 +208,11 @@ function Quick() {
               </div>
                 */}
             </div>
-        </div>
             
+        </div>
+        <Link className='view-deals-button villas-button' to='/category/villas'>
+       Show more
+        </Link>
     </div>
   )
 }
