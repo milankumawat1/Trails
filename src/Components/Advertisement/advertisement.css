@@ -32,7 +32,19 @@
     z-index: 2;
     position: absolute;
     top: 0;
- 
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
 }
 
 .visa-photo{
@@ -40,10 +52,19 @@
     position: absolute;
     top: -18px;
     left: 58%;
+    cursor: pointer;
+}
+
+.cross-btn{
+    position: absolute;
+    top: -10%;
+    right: 2%;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
-    .pic-advertisement{
+    .pic-advertisement, .vid-advertisement{
         flex-wrap: wrap;
     }
     .categ-cont{
@@ -67,6 +88,12 @@
 }
 
 @media (max-width: 1000px){
+    .modal{
+        overflow: auto;
+    }
+    .pic-advertisement, .vid-advertisement{
+        flex-wrap: wrap;
+    }
     .categ-cont{
         display: flex;
         flex-direction: column;
@@ -81,11 +108,72 @@
         top: 0 !important;
         left: 0 !important;
         right: 0 !important;
-    
+        
     }
    
     .plane-photo{
         padding-left: 5%;
         margin-bottom: -20px;
     }
+
+    .cross-btn{
+        position: absolute;
+        top: -6%;
+        right: 2%;
+        font-size: 25px;
+        cursor: pointer;
+    }
 }
+
+.form-main{
+    background-color: white;
+    margin: 5% 20% 15% 20%;
+   padding: 20px;
+   border-radius: 12px;
+  text-align: center;
+   }
+   
+   .f{
+       position: relative;
+   }
+   
+   .name{
+       gap: 40px;
+       margin-top: 40px;
+       text-align: left;
+   }
+   
+   .lab{
+       min-width: 180px;
+       font-size: 24px;
+       font-weight: 400;
+   }
+   
+   .sub-button{
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+   }
+   
+   .in{
+       font-size: 20px;
+       /* min-width: 400px; */
+   }
+   
+   
+   
+   @media (max-width: 1000px){
+       .form-main{
+           margin: 5%;
+           padding: 20px;
+       }
+       .name{
+           flex-direction: column;
+           gap: 8px;
+           align-items: start !important;
+           min-width: none !important;
+       }
+       .in{
+           /* min-width: 250px; */
+       }
+   }

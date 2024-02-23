@@ -14,6 +14,7 @@ import Picadvertisement from '../Advertisement/Picadvertisement';
 import Videosadvertisement from '../Advertisement/Videosadvertisement';
 import Press from '../TabandTour/Press';
 import Plane from '../Advertisement/Plane';
+import Form from '../Forms/Form';
 function Home() {
   return (
     <div> <Hero />

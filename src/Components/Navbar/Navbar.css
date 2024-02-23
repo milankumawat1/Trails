@@ -27,6 +27,29 @@
     display: none;
 }
 
+.mega-box{
+   position: relative;
+   cursor: pointer;
+}
+
+.mini-menu{
+    display: none;
+}
+
+.active-links{
+    width: 150px;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    top: 10;
+}
+
+
 @media only screen and (max-width: 767px){
 .navbar-mobile{
     background-color: white;
