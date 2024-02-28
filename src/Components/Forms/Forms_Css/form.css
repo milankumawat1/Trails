@@ -1,0 +1,18 @@
+.form{
+    background-image: url(../../../Assets/blue-bg.webp);
+    background-size: cover;
+    mask-repeat: no-repeat;
+    display: flex;
+    
+}
+
+.form-left{
+    width: 50%;
+}
+.form-image-container{
+    width: 50%;
+}
+
+.form-plane{
+    width: 15%;
+}

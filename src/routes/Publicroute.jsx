@@ -10,6 +10,7 @@ import Aboutus from "../Components/Aboutus/Aboutus";
 import Footer from "../Components/Footer/Footer";
 import Contact from "../Components/Contact/Contact";
 import { useEffect } from 'react';
+import Form from '../Components/Forms/Form';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function Publicroute() {
       <Route path="/about" element={<Aboutus></Aboutus>}></Route>
     </Routes>
     <Footer></Footer>
+    <Form></Form>
   </Router>
   )
 }

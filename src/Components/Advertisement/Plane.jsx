@@ -40,7 +40,7 @@ function Plane() {
           </div>
 
           <div className="name flex">
-          <label className='lab'>No. of passenger</label>
+          <label className='lab'>No. of passenger:</label>
           <input className='in' type='number' name='user_name'/>
           </div>
 {/* 
@@ -85,7 +85,7 @@ function Plane() {
           block&&(
             <div className="modal">
           <div className='form-main'>
-          <h1 className="form-heading">Visa Form</h1>
+          <h1 className="form-heading">Visa</h1>
         <form className='f'>
           <div className="name flex">
           <label className='lab'>Name :</label>
