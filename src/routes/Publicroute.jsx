@@ -36,7 +36,7 @@ function Publicroute() {
       <Route path="/about" element={<Aboutus></Aboutus>}></Route>
     </Routes>
     <Footer></Footer>
-    <Form></Form>
+    {/* <Form></Form> */}
   </Router>
   )
 }
