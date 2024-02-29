@@ -1,18 +1,109 @@
-.form{
+/* .form{
     background-image: url(../../../Assets/blue-bg.webp);
     background-size: cover;
     mask-repeat: no-repeat;
     display: flex;
-    
+    gap: 10%;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10%;
 }
 
 .form-left{
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .form-image-container{
-    width: 50%;
+    width: 100%;
+}
+
+.form-plane, .text-form, .form-logo, .form-map{
+    max-width: 80%;
+   
+}
+
+.form-right{
+    width: 100%;
 }
 
 .form-plane{
-    width: 15%;
+    position: relative;
+    top: -60%;
+    left: -9%;
 }
+
+.logo-form-container{
+    margin-top: -50%;
+}
+.form-main-fields{
+    background-color: white;
+    border-radius: 18px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.passenger-input{
+    gap: 20px;
+}
+
+.number-in{
+    width: 60px;
+    background-color: #D9D9D9;
+   color:  #141C4E;
+  aspect-ratio: 2/1;
+  text-align: center;
+  border: none;
+   border-radius: 4px;
+}
+
+.number-in:focus{
+    outline: none;
+}
+
+.plus, .minus{
+    width: 24px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 600;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+
+
+.input-group{
+    gap: 10px;
+}
+
+.submit-button{
+    background-color: #96BFB1;
+    border-radius: 6px;
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+    gap: 14px;
+}
+
+@media (max-width: 1000px){
+  .form-left{
+    display: none;
+  }
+
+  .des{
+    flex-direction: column;
+  }
+  .form{
+    margin: 0px;
+  }
+
+  .submit-button{
+    width: 50%;
+  }
+} */
