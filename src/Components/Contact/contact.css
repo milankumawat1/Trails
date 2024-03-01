@@ -11,6 +11,7 @@
     margin-top: 20px;
     align-items: start !important;
     gap: 80px;
+    flex-wrap: wrap;
 }
 
 .contact-container{

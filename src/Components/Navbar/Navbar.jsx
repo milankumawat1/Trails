@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { IoIosHome } from "react-icons/io";
 import {FaPhoneAlt, FaRegHeart } from "react-icons/fa";
+import { FaPlaneDeparture } from "react-icons/fa";
+import { MdOutlineHolidayVillage } from "react-icons/md";
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 import logo from '../../Assets/logo.svg'
@@ -35,21 +37,36 @@ function Navbar() {
           <Link to='/'>
           <div className="navbar-links flex">
            <IoIosHome></IoIosHome>
-           <p>Explore</p>
+           {/* <p>Explore</p> */}
           </div>
           </Link>
+
+          <Link to='category/International'>
+          <div className="navbar-links flex">
+           <FaPlaneDeparture></FaPlaneDeparture>
+           {/* <p>International</p> */}
+          </div>
+          </Link>
+
 
           <Link to='/testimonial'>
           <div className="navbar-links flex">
            <FaRegHeart></FaRegHeart>
-           <p>Testimonial</p>
+           {/* <p>Testimonial</p> */}
+          </div>
+          </Link>
+
+          <Link to='category/Domestic'>
+          <div className="navbar-links flex">
+        <MdOutlineHolidayVillage></MdOutlineHolidayVillage>
+           {/* <p>Domestic</p> */}
           </div>
           </Link>
 
           <Link to='/contact'>
           <div className="navbar-links flex">
            <FaPhoneAlt></FaPhoneAlt>
-           <p>Call Us</p>
+           {/* <p>Call Us</p> */}
           </div>
           </Link>
 

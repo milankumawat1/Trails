@@ -44,6 +44,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
 }
 
@@ -57,10 +60,12 @@
 
 .cross-btn{
     position: absolute;
-    top: -14%;
+    top: 2%;
     right: 2%;
     font-size: 25px;
     cursor: pointer;
+    color: white;
+    z-index: 6;
 }
 
 .form-heading{
@@ -98,13 +103,6 @@
         margin-bottom: -20px;
     }
 
-    .cross-btn{
-        position: absolute;
-        top: -6%;
-        right: 2%;
-        font-size: 25px;
-        cursor: pointer;
-    }
     
 }
 
@@ -144,16 +142,7 @@ border: 1px solid black;
    
    
    
-   @media (max-width: 1000px){
-       .form-main{
-           margin: 5%;
-          
-       }
-      
-      .lab{
-        min-width: 100px !important;
-      }
-   }
+
 
    @media (max-width: 767px) {
     .name{
@@ -294,23 +283,28 @@ border: 1px solid black;
     gap: 14px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
   .form-left{
     display: none;
   }
 
   .des{
     flex-direction: column;
+    align-items: start !important;
   }
   .form{
     margin: 0px;
+  
   }
 
+  .form-right{
+    margin-top: 16px;
+  }
   .submit-button{
     width: 50%;
   }
   .form{
-    top: 0;
+   margin-top: -30%;
     z-index: 10;
     padding: 5px;
     text-align: left !important
@@ -319,4 +313,22 @@ border: 1px solid black;
   .des{
     text-align: left;
   }
+}
+
+@media (max-width: 1028px){
+    .modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+    top: 20%;
+    }
+    .form-left{
+        display: none;
+    }
+    .cross-btn{
+        top: 2%;
+        color: white;
+    }
 }
