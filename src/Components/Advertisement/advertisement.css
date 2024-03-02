@@ -285,8 +285,11 @@ border: 1px solid black;
     text-align: center;
     gap: 14px;
 }
-
+.in{
+    font-size: 16px;
+}
 @media (max-width: 800px){
+    
     .modal{
         overflow: auto;
     }
