@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import '../QuickGateways/quick.css'
 // import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import hotel1 from '../../Assets/hotel1.webp'
@@ -7,7 +8,12 @@ import hotel3 from '../../Assets/hotel3.webp'
 import hotel4 from '../../Assets/hotel4.webp'
 import hotel5 from '../../Assets/hotel5.webp'
 import hotel6 from '../../Assets/hotel6.webp'
+import l from '../../Assets/form-logo.png'
+import text from '../../Assets/form-goa-text.png'
 import { Link } from 'react-router-dom'
+import { BsSendFill } from "react-icons/bs";
+// import './advertisement.css'
+import { FaTimes } from "react-icons/fa";
 const images=[
   {
     img1: hotel4,
@@ -34,6 +40,21 @@ const images=[
 
 
 function Quick() {
+  const [passenger, setPassenger]= useState(1);
+  const incrementPassengers = () => {
+    setPassenger(prevPassengers => prevPassengers + 1);
+  };
+
+  const decrementPassengers = () => {
+    if (passenger > 1) {
+      setPassenger(prevPassengers => prevPassengers - 1);
+    }
+  };
+  const[blockV, setBlockV]= useState(false);
+  const toggleBlockV= ()=>{
+    setBlockV(!blockV)
+  }
+
   // const [currentIndex, setCurrentIndex]= useState(0);
   
   // const nextSlide=()=>{
@@ -210,9 +231,113 @@ function Quick() {
             </div>
             
         </div>
+        <div className="villa-buttons flex">
         <Link className='view-deals-button villas-button' to='/category/villas'>
        Show more
         </Link>
+        <div className='view-deals-button villas-button pointer' onClick={toggleBlockV}>
+       Inquire Now
+        </div>
+        </div>
+        {
+          blockV&&(
+            
+              <div className="modal"> 
+              <div className="form">
+  
+  <div className="form-left">
+    <div className="form-image-container">
+    <img src={text} alt="" className="text-form" />
+    </div>
+    <div className="form-image-container">
+    <img src={hotel1} alt="" className="form-map" />
+   </div>
+    {/* <div className="form-image-container">
+    <img src={p} alt="" className="form-plane" />
+    </div> */}
+    <div className="form-image-container">
+    <img src={l} alt="" />
+    </div>
+  </div>
+  
+  <div className="form-right">
+    <from className="form-main-fields">
+  
+    <input className='in' placeholder='Your name' type='text' name='user_name'/>
+    <input className='in' placeholder='Your email' type='email' name='user_name'/>
+    <input className='in' placeholder='Your moble no.' type='tel' name='user_name'/>
+  
+    <div className="passenger-input flex">
+      <label className='lab' htmlFor="passenger">Number of Travellers:</label>
+      <div className="input-group flex">
+        <div className="minus" onClick={decrementPassengers}>-</div>
+        <input
+        className='number-in'
+          type="text"
+          id="passenger"
+          value={passenger}
+          
+        />
+        <div className="plus" onClick={incrementPassengers}>+</div>
+      </div>
+    </div>
+  
+    <div className="des passenger-input flex">
+      <label className='form-lab'>To</label>
+      <div className="input-group flex">
+        <input
+        className='in'
+          type="text"
+          id="passenger"
+        />
+       
+      </div>
+  
+      <label className='form-lab' htmlFor="passenger">From</label>
+      <div className="input-group flex">
+        <input
+        className='in'
+          type="text"
+          id="passenger"
+        />
+      </div>
+    </div>
+  
+    <div className="passenger-input flex">
+      <label className='form-lab' htmlFor="passenger">Check-In Date</label>
+      <div className="input-group flex">
+        <input
+        className='in'
+          type='date'
+          id="passenger"
+        />
+      </div>
+    </div>
+  
+    <div className="passenger-input flex">
+      <label className='form-lab' htmlFor="passenger">Check-Out Date</label>
+      <div className="input-group flex">
+        <input
+        className='in'
+          type='date'
+          id="passenger"
+        />
+      </div>
+    </div>
+  
+  <div className="submit-button flex"><BsSendFill className='send-icon'></BsSendFill>Submit</div>
+  
+  
+  
+    </from>
+   
+  </div>
+  <FaTimes onClick={toggleBlockV} className='cross-btn'></FaTimes>
+  </div>           
+              </div>
+            
+          )
+        }
     </div>
   )
 }

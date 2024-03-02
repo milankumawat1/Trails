@@ -1,4 +1,4 @@
-import im from '../../Assets/card-image.jpg'
+
 import singapore1 from '../../Assets/pdf/singapore/singaporewithuniversalstudio.pdf'
 import singapore2 from '../../Assets/pdf/singapore/Singapore 2.pdf'
 import singapore3 from '../../Assets/pdf/singapore/Singapore 3.pdf'

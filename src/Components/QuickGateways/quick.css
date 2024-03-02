@@ -9,9 +9,13 @@
 }
 
 .villas-button{
-  margin: 40px auto;
   padding: 20px 40px;
   border-radius: 12px;
+}
+.villa-buttons{
+  width: 100%;
+  margin: 40px auto;
+  gap: 40px;
 }
 .quick-upper{
   justify-content: space-between;

@@ -9,6 +9,8 @@ import l from '../../Assets/form-logo.png'
 import map from '../../Assets/form-map.png'
 import p from '../../Assets/form-plane.png'
 import text from '../../Assets/form-text.png'
+import visatext from '../../Assets/form-visa-text.png'
+import formpic from '../../Assets/form-visa-pic.png'
 
 function Plane() {
   const [passenger, setPassenger]= useState(1);
@@ -30,6 +32,17 @@ function Plane() {
   const toggleBlock2= ()=>{
     setBlock2(!block2)
   }
+
+  const [oneWayChecked, setOneWayChecked] = useState(false);
+  const [roundChecked, setRoundChecked] = useState(false);
+
+  const handleOneWayChange = () => {
+    setOneWayChecked(!oneWayChecked);
+  };
+
+  const handleRoundChange = () => {
+    setRoundChecked(!roundChecked);
+  };
   return (
     <div className='categ-cont flex'>
       <div onClick={toggleBlock}>
@@ -66,7 +79,7 @@ function Plane() {
   <input className='in' placeholder='Your moble no.' type='tel' name='user_name'/>
 
   <div className="passenger-input flex">
-    <label className='lab' htmlFor="passenger">Number of Passengers:</label>
+    <label className='lab' htmlFor="passenger">Number of Travellers:</label>
     <div className="input-group flex">
       <div className="minus" onClick={decrementPassengers}>-</div>
       <input
@@ -100,6 +113,25 @@ function Plane() {
       />
     </div>
   </div>
+
+  <div className="category-label passenger-input flex">
+    <label className='form-lab'>Category</label>
+  <label>
+    <input
+  type="checkbox"
+  checked={oneWayChecked}
+  onChange={handleOneWayChange}/>
+    <span>One-Way</span>
+  </label>
+  <label>
+    <input 
+    type="checkbox"
+    checked={roundChecked}
+    onChange={handleRoundChange}
+    />
+    <span>Round</span>
+  </label>
+</div>
 
   <div className="passenger-input flex">
     <label className='form-lab' htmlFor="passenger">Check-In Date</label>
@@ -139,53 +171,89 @@ function Plane() {
 
         {
           block&&(
-            <div className="modal">
-          <div className='form-main'>
-          <h1 className="form-heading">Visa</h1>
-        <form className='f'>
-          <div className="name flex">
-          <label className='lab'>Name :</label>
-          <input className='in' type='text' name='user_name'/>
-          </div>
+            <div className="modal"> 
+            <div className="form">
 
-          <div className="name flex">
-          <label className='lab'>Mobile no. :</label>
-          <input className='in' type='tel' name='user_name'/>
-          </div>
+<div className="form-left">
+  <div className="form-image-container">
+  <img src={visatext} alt="" className="text-form" />
+  </div>
+  <div className="form-image-container">
+  <img src={formpic} alt="" className="form-map" />
+ </div>
+  {/* <div className="form-image-container">
+  <img src={p} alt="" className="form-plane" />
+  </div> */}
+  <div className="form-image-container">
+  <img src={l} alt="" className="form-logo" />
+  </div>
+</div>
 
-          <div className="name flex">
-          <label className='lab'>Email :</label>
-          <input className='in' type='email' name='user_name'/>
-          </div>
+<div className="form-right">
+  <from className="form-main-fields">
 
-          <div className="name flex">
-          <label className='lab'>No. of passenger</label>
-          <input className='in' type='number' name='user_name'/>
-          </div>
-{/* 
-          <div className="name flex">
-          <label className='lab'>Travel Date :</label>
-          </div> */}
+  <input className='in' placeholder='Your name' type='text' name='user_name'/>
+  <input className='in' placeholder='Your email' type='email' name='user_name'/>
+  <input className='in' placeholder='Your moble no.' type='tel' name='user_name'/>
 
-
-          <div className="name flex">
-          <label className='lab'>Destination :</label><input className='in' type="text" name='user_name'/>
-          </div>
-          
-
-          <div className="name flex">
-          <label className='lab'>Departure Date :</label><input className='in' type="date" name='user_name'/>
-          <label className='lab'>Arrival Date :</label><input className='in' type="date" name='user_name'/>
-          </div>
-
+  <div className="passenger-input flex">
+    <label className='lab' htmlFor="passenger">Number of Travellers:</label>
+    <div className="input-group flex">
+      <div className="minus" onClick={decrementPassengers}>-</div>
+      <input
+      className='number-in'
+        type="text"
+        id="passenger"
+        value={passenger}
         
-
-         <button className='sub-button' type='submit'>Submit</button>
-         <FaTimes onClick={toggleBlock} className='cross-btn'></FaTimes>
-         
-        </form>
+      />
+      <div className="plus" onClick={incrementPassengers}>+</div>
     </div>
-            
+  </div>
+
+  <div className="des passenger-input flex">
+    <label className='form-lab'>Trip Location</label>
+    <div className="input-group flex">
+      <input
+      className='in'
+        type="text"
+        id="passenger"
+      />
+     
+    </div>
+  </div>
+
+  <div className="passenger-input flex">
+    <label className='form-lab' htmlFor="passenger">Departure Date</label>
+    <div className="input-group flex">
+      <input
+      className='in'
+        type='date'
+        id="passenger"
+      />
+    </div>
+  </div>
+
+  <div className="passenger-input flex">
+    <label className='form-lab' htmlFor="passenger">Arrival Date</label>
+    <div className="input-group flex">
+      <input
+      className='in'
+        type='date'
+        id="passenger"
+      />
+    </div>
+  </div>
+
+<div className="submit-button flex"><BsSendFill className='send-icon'></BsSendFill>Submit</div>
+
+
+
+  </from>
+ 
+</div>
+<FaTimes onClick={toggleBlock} className='cross-btn'></FaTimes>
+</div>           
             </div>
           )
         }

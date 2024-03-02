@@ -74,7 +74,7 @@
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1028px){
     .modal{
         overflow: auto;
     }
@@ -198,11 +198,12 @@ border: 1px solid black;
     margin: 15%;
     position: fixed;
     z-index: 2;
-    top: -32%;
+    height: 98vh;
+    overflow: hidden;
 }
 
 .form-left{
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -216,6 +217,7 @@ border: 1px solid black;
    
 }
 
+
 .form-right{
     width: 100%;
 }
@@ -227,7 +229,7 @@ border: 1px solid black;
 }
 
 .logo-form-container{
-    margin-top: -50%;
+    margin-top: -70%;
 }
 .form-main-fields{
     background-color: white;
@@ -237,8 +239,7 @@ border: 1px solid black;
     flex-direction: column;
     width: 100%;
     gap: 40px;
-    margin-top: 20px;
-}
+   }
 
 .passenger-input{
     gap: 20px;
@@ -294,7 +295,7 @@ border: 1px solid black;
   }
   .form{
     margin: 0px;
-  
+    height: auto;
   }
 
   .form-right{
@@ -304,7 +305,7 @@ border: 1px solid black;
     width: 50%;
   }
   .form{
-   margin-top: -30%;
+   margin-top: -20%;
     z-index: 10;
     padding: 5px;
     text-align: left !important
@@ -312,6 +313,9 @@ border: 1px solid black;
 
   .des{
     text-align: left;
+  }
+  .form-main-fields{
+    margin-top: 20px;
   }
 }
 
@@ -322,7 +326,8 @@ border: 1px solid black;
         align-items: center;
     }
     .form{
-    top: 20%;
+    /* top: 20%; */
+    height: auto;
     }
     .form-left{
         display: none;
@@ -330,5 +335,8 @@ border: 1px solid black;
     .cross-btn{
         top: 2%;
         color: white;
+    }
+    .submit-button{
+        width: 30%;
     }
 }
