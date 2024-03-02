@@ -99,8 +99,9 @@
     }
    
     .plane-photo{
-        padding-left: 5%;
-        margin-bottom: -20px;
+        width: 120% !important;
+        margin-bottom: -30px;
+     
     }
 
     
@@ -160,6 +161,7 @@ border: 1px solid black;
         top: 0;
         margin: 0px;
         align-items: center;
+        overflow: hidden;
     }
     .visa-photo, .plane-photo{
         width: 100%;
@@ -285,6 +287,9 @@ border: 1px solid black;
 }
 
 @media (max-width: 800px){
+    .modal{
+        overflow: auto;
+    }
   .form-left{
     display: none;
   }
@@ -294,8 +299,13 @@ border: 1px solid black;
     align-items: start !important;
   }
   .form{
-    margin: 0px;
+    margin: 60px;
     height: auto;
+     z-index: 10;
+     padding: 10px;
+     text-align: left !important;
+     max-height: 100vh;
+     overflow-y: auto;
   }
 
   .form-right{
@@ -304,12 +314,8 @@ border: 1px solid black;
   .submit-button{
     width: 50%;
   }
-  .form{
-   /* margin-top: -20%; */
-    z-index: 10;
-    padding: 5px;
-    text-align: left !important
-  }
+ 
+
 
   .des{
     text-align: left;
@@ -324,6 +330,7 @@ border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     .form{
     /* top: 20%; */
