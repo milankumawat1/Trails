@@ -61,7 +61,7 @@ function Plane() {
   <img src={text} alt="" className="text-form" />
   </div>
   <div className="form-image-container">
-  <img src={map} alt="" className="form-map" />
+  <img src={map} alt="" className="form-map small-width" />
  </div>
   <div className="form-image-container">
   <img src={p} alt="" className="form-plane" />

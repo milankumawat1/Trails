@@ -29,6 +29,10 @@ h2{
 .pointer{
   cursor: pointer;
 }
+
+.curve{
+  border-radius: 12px;
+}
 @media (max-width: 767px){
   h1{
      font-size: 22px;

@@ -272,7 +272,9 @@ border: 1px solid black;
 }
 
 
-
+.small-width{
+    max-width: 80%;
+  }
 .input-group{
     gap: 10px;
 }
@@ -280,8 +282,8 @@ border: 1px solid black;
 .submit-button{
     background-color: #96BFB1;
     border-radius: 6px;
-    padding: 20px;
-    width: 25%;
+    padding: 22px;
+    max-width: fit-content;
     text-align: center;
     gap: 14px;
 }
@@ -296,6 +298,7 @@ border: 1px solid black;
   .form-left{
     display: none;
   }
+ 
 
   .des{
     flex-direction: column;
@@ -314,9 +317,7 @@ border: 1px solid black;
   .form-right{
     margin-top: 16px;
   }
-  .submit-button{
-    width: 50%;
-  }
+ 
  
 
 
@@ -346,7 +347,5 @@ border: 1px solid black;
         top: 2%;
         color: white;
     }
-    .submit-button{
-        width: 50%;
-    }
+   
 }
