@@ -14,7 +14,11 @@ import { FaTimes } from "react-icons/fa";
 import { BsSendFill } from "react-icons/bs";
 import hotel1 from '../../Assets/hotel1.webp';
 import textG from '../../Assets/form-goa-text.png'
+import emailjs from '@emailjs/browser';
+
 function Card({ data }) {
+
+  //------------------------- Villas-----------------------
   const [passenger, setPassenger] = useState(1);
   const incrementPassengers = () => {
     setPassenger((prevPassengers) => prevPassengers + 1);
@@ -29,10 +33,116 @@ function Card({ data }) {
   const toggleBlockH = () => {
     setBlockH(!blockH);
   };
+
   const [blockV, setBlockV] = useState(false);
   const toggleBlockV = () => {
     setBlockV(!blockV);
   };
+
+  const [nameG, setNameG]= useState('');
+  const [emailG, setEmailG]= useState('');
+  const [mobileG, setMobileG]= useState('');
+  const [checkinG, setCheckinG]= useState('');
+  const [checkoutG, setCheckoutG]= useState('');
+
+  const handleSubmitG=(e)=>{
+
+    e.preventDefault();
+
+  // Your EmailJS service ID
+  const serviceId= "service_moe4fcu";
+  const templateId= "template_jua2d3s";
+  const publicKey= "UldQk-J9B3sXHTGNY";
+
+  // creating object containing dynamic template
+  const templateParamsV={
+    from_name: nameG,
+    from_email: emailG,
+    from_mobile: mobileG,
+    checkin: checkinG, 
+    checkout: checkoutG,
+    travellers: passenger, 
+    triplocation: "",
+    from_category: "VILLAS INQUIRE"
+  };
+
+   // send mail
+   emailjs.send(serviceId, templateId, templateParamsV,  publicKey).then((response)=>{
+    console.log("Email sent successfully !", response);
+    setNameG('');
+    setEmailG('');
+    setMobileG('');
+    setPassenger(1);
+    setCheckinG('');
+    setCheckoutG('');
+   })
+   .catch((error)=>{
+    console.error('Error sending email:', error);
+   })
+   toggleBlockV();
+  }
+
+
+  // holidays--------------------------------------------
+
+  const [pass, setPass]= useState(1);
+  const incrementPass = () => {
+    setPass(prevPass => prevPass+ 1);
+  };
+
+  const decrementPass = () => {
+    if (pass > 1) {
+      setPass(prevPassengersV => prevPassengersV - 1);
+    }
+  };
+
+
+  const [name, setName]= useState('');
+  const [email, setEmail]= useState('');
+  const [mobile, setMobile]= useState('');
+  const [checkin, setCheckin]= useState('');
+  const [checkout, setCheckout]= useState('');
+  const [triplocation, setTripLocation]= useState('');
+  const handleSubmit=(e)=>{
+
+    e.preventDefault();
+
+  // Your EmailJS service ID
+  const serviceId= "service_moe4fcu";
+  const templateId= "template_jua2d3s";
+  const publicKey= "UldQk-J9B3sXHTGNY";
+
+  // creating object containing dynamic template
+  const templateParamsV={
+    from_name: name,
+    from_email: email,
+    from_mobile: mobile,
+    checkin: checkin, 
+    checkout: checkout,
+    travellers: passenger, 
+    triplocation: triplocation,
+    from_category: "HOLIDAY DESTINATION INQUIRE"
+  };
+
+   // send mail
+   emailjs.send(serviceId, templateId, templateParamsV,  publicKey).then((response)=>{
+    console.log("Email sent successfully !", response);
+    setName('');
+    setEmail('');
+    setMobile('');
+    setPass(1);
+    setCheckin('');
+    setCheckout('');
+    setTripLocation('');
+   })
+   .catch((error)=>{
+    console.error('Error sending email:', error);
+   })
+   toggleBlockH();
+  }
+
+
+
   const { category } = useParams();
   const navigate = useNavigate();
 
@@ -111,16 +221,16 @@ function Card({ data }) {
                   </button>
                 ) : item.link ? (
                   <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    <button className="view-deals-button">Click here</button>
+                    <button className="view-deals-button pointer">Click here</button>
                   </a>
                 ) : null}
 
                 {item.category === "villas"? (
-                  <button onClick={toggleBlockV} className="view-deals-button">
+                  <button onClick={toggleBlockV} className="view-deals-button pointer">
                     Inquire now
                   </button>
                 ) : (
-                  <button onClick={toggleBlockH} className="view-deals-button">
+                  <button onClick={toggleBlockH} className="view-deals-button pointer">
                     Inquire now
                   </button>
                 )}
@@ -150,24 +260,30 @@ function Card({ data }) {
                   </div>
 
                   <div className="form-right">
-                    <from className="form-main-fields">
+                    <form onSubmit={handleSubmit} className="form-main-fields">
                       <input
                         className="in"
                         placeholder="Your name"
                         type="text"
-                        name="user_name"
+                        name={name}
+                        required
+                        onChange={(e)=>setName(e.target.value)}
                       />
                       <input
                         className="in"
                         placeholder="Your email"
                         type="email"
-                        name="user_name"
+                        name={email}
+                        required
+                         onChange={(e)=>setEmail(e.target.value)}
                       />
                       <input
                         className="in"
                         placeholder="Your moble no."
                         type="tel"
-                        name="user_name"
+                        name={mobile}
+                        required
+                         onChange={(e)=>setMobile(e.target.value)}
                       />
 
                       <div className="passenger-input flex">
@@ -175,16 +291,16 @@ function Card({ data }) {
                           Number of Travellers:
                         </label>
                         <div className="input-group flex">
-                          <div className="minus" onClick={decrementPassengers}>
+                          <div className="minus" onClick={decrementPass}>
                             -
                           </div>
                           <input
                             className="number-in"
                             type="text"
                             id="passenger"
-                            value={passenger}
+                            value={pass}
                           />
-                          <div className="plus" onClick={incrementPassengers}>
+                          <div className="plus" onClick={incrementPass}>
                             +
                           </div>
                         </div>
@@ -193,7 +309,8 @@ function Card({ data }) {
                       <div className="des passenger-input flex">
                         <label className="form-lab">Trip Location</label>
                         <div className="input-group flex">
-                          <input className="in" type="text" id="passenger" />
+                          <input className="in" type="text" id="passenger"  name={triplocation}
+        onChange={(e)=>{setTripLocation(e.target.value)}} required />
                         </div>
                       </div>
 
@@ -202,7 +319,8 @@ function Card({ data }) {
                           Check-In Date
                         </label>
                         <div className="input-group flex">
-                          <input className="in" type="date" id="passenger" />
+                          <input className="in" type="date" id="passenger"  name={checkin}
+        onChange={(e)=>{setCheckin(e.target.value)}} required />
                         </div>
                       </div>
 
@@ -211,14 +329,15 @@ function Card({ data }) {
                           Check-Out Date
                         </label>
                         <div className="input-group flex">
-                          <input className="in" type="date" id="passenger" />
+                          <input className="in" type="date" id="passenger" name={checkout}
+        onChange={(e)=>{setCheckout(e.target.value)}} required/>
                         </div>
                       </div>
 
-                      <div className="submit-button flex">
+                      <button type="submit" className="submit-button flex pointer">
                         <BsSendFill className="send-icon"></BsSendFill>Submit
-                      </div>
-                    </from>
+                      </button>
+                    </form>
                   </div>
                   <FaTimes
                     onClick={toggleBlockH}
@@ -228,107 +347,96 @@ function Card({ data }) {
               </div>
             )}
 
-            {
-              blockV&&(
-                
-            
-              <div className="modal"> 
-              <div className="form">
-  
-  <div className="form-left">
-    <div className="form-image-container">
-    <img src={textG} alt="" className="text-form" />
-    </div>
-    <div className="form-image-container">
-    <img src={hotel1} alt="" className="form-map curve" />
-   </div>
-    {/* <div className="form-image-container">
+{blockV && (
+        <div className="modal">
+          <div className="form">
+            <div className="form-left">
+              <div className="form-image-container">
+                <img src={text} alt="" className="text-form" />
+              </div>
+              <div className="form-image-container">
+                <img src={hotel1} alt="" className="form-map" />
+              </div>
+              {/* <div className="form-image-container">
     <img src={p} alt="" className="form-plane" />
     </div> */}
-    <div className="form-image-container">
-    <img src={l} alt="" />
-    </div>
-  </div>
-  
-  <div className="form-right">
-    <from className="form-main-fields">
-  
-    <input className='in' placeholder='Your name' type='text' name='user_name'/>
-    <input className='in' placeholder='Your email' type='email' name='user_name'/>
-    <input className='in' placeholder='Your moble no.' type='tel' name='user_name'/>
-  
-    <div className="passenger-input flex">
-      <label className='lab' htmlFor="passenger">Number of Travellers:</label>
-      <div className="input-group flex">
-        <div className="minus" onClick={decrementPassengers}>-</div>
-        <input
-        className='number-in'
-          type="text"
-          id="passenger"
-          value={passenger}
-          
-        />
-        <div className="plus" onClick={incrementPassengers}>+</div>
-      </div>
-    </div>
-  
-    <div className="des passenger-input flex">
-      <label className='form-lab'>To</label>
-      <div className="input-group flex">
-        <input
-        className='in'
-          type="text"
-          id="passenger"
-        />
-       
-      </div>
-  
-      <label className='form-lab' htmlFor="passenger">From</label>
-      <div className="input-group flex">
-        <input
-        className='in'
-          type="text"
-          id="passenger"
-        />
-      </div>
-    </div>
-  
-    <div className="passenger-input flex">
-      <label className='form-lab' htmlFor="passenger">Check-In Date</label>
-      <div className="input-group flex">
-        <input
-        className='in'
-          type='date'
-          id="passenger"
-        />
-      </div>
-    </div>
-  
-    <div className="passenger-input flex">
-      <label className='form-lab' htmlFor="passenger">Check-Out Date</label>
-      <div className="input-group flex">
-        <input
-        className='in'
-          type='date'
-          id="passenger"
-        />
-      </div>
-    </div>
-  
-  <div className="submit-button flex"><BsSendFill className='send-icon'></BsSendFill>Submit</div>
-  
-  
-  
-    </from>
-   
-  </div>
-  <FaTimes onClick={toggleBlockV} className='cross-btn'></FaTimes>
-  </div>           
+              <div className="form-image-container">
+                <img src={l} alt="" />
               </div>
-            
-          
-              )
-            }
+            </div>
+
+            <div className="form-right">
+              <form onSubmit={handleSubmitG} className="form-main-fields">
+                <input
+                    required
+                  className="in"
+                  placeholder="Your name"
+                  type="text"
+                  name={nameG}
+                   onChange={(e)=>setNameG(e.target.value)}
+                />
+                <input
+                  className="in"
+                  placeholder="Your email"
+                  type="email"
+                  name={emailG}
+                   onChange={(e)=>setEmailG(e.target.value)}
+                   required/>
+                <input
+                  className="in"
+                  placeholder="Your moble no."
+                  type="tel"
+                  name={mobileG}
+                   onChange={(e)=>setMobileG(e.target.value)}
+                   required/>
+
+                <div className="passenger-input flex">
+                  <label className="lab" htmlFor="passenger">
+                    Number of Travellers:
+                  </label>
+                  <div className="input-group flex">
+                    <div className="minus" onClick={decrementPassengers}>
+                      -
+                    </div>
+                    <input
+                      className="number-in"
+                      type="text"
+                      id="passenger"
+                      value={passenger}
+                    />
+                    <div className="plus" onClick={incrementPassengers}>
+                      +
+                    </div>
+                  </div>
+                </div>
+
+                <div className="passenger-input flex">
+                  <label className="form-lab" htmlFor="passenger">
+                    Check-In Date
+                  </label>
+                  <div className="input-group flex">
+                    <input className="in" type="date" id="passenger" name={checkinG} onChange={(e)=>setCheckinG(e.target.value)} required/>
+                  </div>
+                </div>
+
+                <div className="passenger-input flex">
+                  <label className="form-lab" htmlFor="passenger">
+                    Check-Out Date
+                  </label>
+                  <div className="input-group flex">
+                    <input className="in" type="date" id="passenger" name={checkoutG} onChange={(e)=>setCheckoutG(e.target.value)} required/>
+                  </div>
+                </div>
+
+                <button type="submit" className="submit-button flex">
+                  <BsSendFill className="send-icon"></BsSendFill>Submit
+                </button>
+              </form>
+            </div>
+            <FaTimes onClick={toggleBlockV} className="cross-btn"></FaTimes>
+          </div>
+        </div>
+      )}
           </div>
         ))}
     </div>

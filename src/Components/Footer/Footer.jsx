@@ -84,7 +84,7 @@ function Footer() {
          <div className="trail-desc flex">
 
                 <p className='desc-para'>“YOLO TRIPS” is a professionally managed travel company and offers a broad spectrum of travel and tourism services that includes Corporate Travel (International & Domestic), Leisure Travel, MICE, Foreign Exchange, Car Rentals, Visa & Passport Assistance, Travel Insurance. has its office located in Vaishali Ghaziabad. Our team of professionally qualified travel experts provides unmatched quality of service to its customers and their negotiating power in the industry ensures that you get the most competitive prices without any compromises on the quality and thus obtain optimum value for your travel investments.</p>
-                <video src={video} className="footer-vid" preload="auto" autoplay loop playsinline webkit-playsinline x5-playsinline></video>
+                <video src={video} className="footer-vid" preload="auto" autoPlay loop playsInline webkit-playsinline={true} x5-playsInline={true}></video>
             
          </div>
 
