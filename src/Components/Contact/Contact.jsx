@@ -23,6 +23,7 @@ function Contact() {
             <div className="contact-desc-heading">Planning A Trip ?</div>
             <a className='cont-links' href="mailto:sales@yolotrips.co.in"><span><CiMail /></span>&nbsp;sales@yolotrips.co.in</a>
             <a className='cont-links' href='tel:+919599006862'><span><MdOutlinePhone /></span>&nbsp;+919599006862</a>
+            <a className='cont-links' href='tel:+919599253573'><span><MdOutlinePhone /></span>&nbsp;+919599253573</a>
             <a className='cont-links' href='tel:+919910888997'><span><FaWhatsapp /></span>&nbsp;+919910888997</a>
           </div>
 
