@@ -97,9 +97,10 @@ function Plane() {
         setdepartureDate("");
         setFrom("");
         setarrivalDate("");
+        alert("Thank You For Submission.. We will get to you soon");
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
+        alert("error submitting form please contact us.")
       });
     toggleBlock2();
   };
@@ -165,7 +166,7 @@ function Plane() {
     emailjs
       .send(serviceId, templateId, templateParamsV, publicKey)
       .then((response) => {
-        console.log("Email sent successfully !", response);
+        // console.log("Email sent successfully !", response);
         setNameV("");
         setEmailV("");
         setMobileV("");
@@ -173,11 +174,13 @@ function Plane() {
         setTripLocationV("");
         setdepartureDateV("");
         setarrivalDateV("");
+        alert("Thank You For Submission.. We will get to you soon");
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
+        alert("error submitting form please contact us.");
       });
     toggleBlock();
+    
   };
 
   return (

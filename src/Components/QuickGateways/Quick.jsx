@@ -90,9 +90,10 @@ function Quick() {
     setPassenger(1);
     setCheckinG('');
     setCheckoutG('');
+    alert("Thank You For Submission.. We will get to you soon");
    })
    .catch((error)=>{
-    console.error('Error sending email:', error);
+    alert("error submitting form please contact us.")
    })
    toggleBlockV();
   }
