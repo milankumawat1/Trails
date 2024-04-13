@@ -191,7 +191,7 @@ border: 1px solid black;
  /* form css  */
 
  .form{
-    background-image: url(../../Assets/blue-bg.webp);
+    background-image: url(../../Assets/blue-bg.jpg);
     background-size: cover;
     mask-repeat: no-repeat;
     display: flex;

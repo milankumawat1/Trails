@@ -54,48 +54,48 @@ function Quick() {
     setBlockV(!blockV);
   };
 
-  const [nameG, setNameG]= useState('');
-  const [emailG, setEmailG]= useState('');
-  const [mobileG, setMobileG]= useState('');
-  const [checkinG, setCheckinG]= useState('');
-  const [checkoutG, setCheckoutG]= useState('');
+  const [nameG, setNameG] = useState('');
+  const [emailG, setEmailG] = useState('');
+  const [mobileG, setMobileG] = useState('');
+  const [checkinG, setCheckinG] = useState('');
+  const [checkoutG, setCheckoutG] = useState('');
 
-  const handleSubmitG=(e)=>{
+  const handleSubmitG = (e) => {
 
     e.preventDefault();
 
-  // Your EmailJS service ID
-  const serviceId= "service_moe4fcu";
-  const templateId= "template_jua2d3s";
-  const publicKey= "UldQk-J9B3sXHTGNY";
+    // Your EmailJS service ID
+    const serviceId = "service_moe4fcu";
+    const templateId = "template_jua2d3s";
+    const publicKey = "UldQk-J9B3sXHTGNY";
 
-  // creating object containing dynamic template
-  const templateParamsV={
-    from_name: nameG,
-    from_email: emailG,
-    from_mobile: mobileG,
-    checkin: checkinG, 
-    checkout: checkoutG,
-    travellers: passenger, 
-    triplocation: "",
-    from_category: "VILLAS INQUIRE"
-  };
+    // creating object containing dynamic template
+    const templateParamsV = {
+      from_name: nameG,
+      from_email: emailG,
+      from_mobile: mobileG,
+      checkin: checkinG,
+      checkout: checkoutG,
+      travellers: passenger,
+      triplocation: "",
+      from_category: "VILLAS INQUIRE"
+    };
 
-   // send mail
-   emailjs.send(serviceId, templateId, templateParamsV,  publicKey).then((response)=>{
-    console.log("Email sent successfully !", response);
-    setNameG('');
-    setEmailG('');
-    setMobileG('');
-    setPassenger(1);
-    setCheckinG('');
-    setCheckoutG('');
-    alert("Thank You For Submission.. We will get to you soon");
-   })
-   .catch((error)=>{
-    alert("error submitting form please contact us.")
-   })
-   toggleBlockV();
+    // send mail
+    emailjs.send(serviceId, templateId, templateParamsV, publicKey).then((response) => {
+      console.log("Email sent successfully !", response);
+      setNameG('');
+      setEmailG('');
+      setMobileG('');
+      setPassenger(1);
+      setCheckinG('');
+      setCheckoutG('');
+      alert("Thank You For Submission.. We will get to you soon");
+    })
+      .catch((error) => {
+        alert("error submitting form please contact us.")
+      })
+    toggleBlockV();
   }
 
   // const [currentIndex, setCurrentIndex]= useState(0);
@@ -328,27 +328,27 @@ function Quick() {
             <div className="form-right">
               <form onSubmit={handleSubmitG} className="form-main-fields">
                 <input
-                    required
+                  required
                   className="in"
                   placeholder="Your name"
                   type="text"
                   name={nameG}
-                   onChange={(e)=>setNameG(e.target.value)}
+                  onChange={(e) => setNameG(e.target.value)}
                 />
                 <input
                   className="in"
                   placeholder="Your email"
                   type="email"
                   name={emailG}
-                   onChange={(e)=>setEmailG(e.target.value)}
-                   required/>
+                  onChange={(e) => setEmailG(e.target.value)}
+                  required />
                 <input
                   className="in"
                   placeholder="Your moble no."
                   type="tel"
                   name={mobileG}
-                   onChange={(e)=>setMobileG(e.target.value)}
-                   required/>
+                  onChange={(e) => setMobileG(e.target.value)}
+                  required />
 
                 <div className="passenger-input flex">
                   <label className="lab" htmlFor="passenger">
@@ -375,7 +375,7 @@ function Quick() {
                     Check-In Date
                   </label>
                   <div className="input-group flex">
-                    <input className="in" type="date" id="passenger" name={checkinG} onChange={(e)=>setCheckinG(e.target.value)} required/>
+                    <input className="in" type="date" id="passenger" name={checkinG} onChange={(e) => setCheckinG(e.target.value)} required />
                   </div>
                 </div>
 
@@ -384,7 +384,7 @@ function Quick() {
                     Check-Out Date
                   </label>
                   <div className="input-group flex">
-                    <input className="in" type="date" id="passenger" name={checkoutG} onChange={(e)=>setCheckoutG(e.target.value)} required/>
+                    <input className="in" type="date" id="passenger" name={checkoutG} onChange={(e) => setCheckoutG(e.target.value)} required />
                   </div>
                 </div>
 

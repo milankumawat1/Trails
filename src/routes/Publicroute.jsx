@@ -10,7 +10,7 @@ import Aboutus from "../Components/Aboutus/Aboutus";
 import Footer from "../Components/Footer/Footer";
 import Contact from "../Components/Contact/Contact";
 import { useEffect } from 'react';
-import Form from '../Components/Forms/Form';
+// import Form from '../Components/Forms/Form';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -25,19 +25,18 @@ function ScrollToTop() {
 function Publicroute() {
   return (
     <Router>
-      <ScrollToTop></ScrollToTop>
-    <Navbar></Navbar>
-    <Routes>
-      <Route path="/" element={<Home></Home>} />
-
-      <Route path="/category/:category" element={<Card data={data} />} />
-      <Route path="/testimonial" element={<Testimonial />} />
-      <Route path="/contact" element={<Contact/>} />
-      <Route path="/about" element={<Aboutus></Aboutus>}></Route>
-    </Routes>
-    <Footer></Footer>
-    {/* <Form></Form> */}
-  </Router>
+      <ScrollToTop />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:category" element={<Card data={data} />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<Aboutus />} />
+      </Routes>
+      <Footer />
+      {/* <Form></Form> */}
+    </Router>
   )
 }
 

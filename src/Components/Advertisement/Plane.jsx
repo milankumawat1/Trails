@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import plane from "../../Assets/plane.svg";
 import visa from "../../Assets/visa.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { BsSendFill } from "react-icons/bs";
 import "./advertisement.css";
 import { FaTimes } from "react-icons/fa";

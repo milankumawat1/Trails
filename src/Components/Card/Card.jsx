@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa6";
 import "../Card/card.css";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import l from "../../Assets/form-logo.png";
 import text from "../../Assets/form-holiday-text.png";
 import map from "../../Assets/form-map.png";
@@ -13,7 +13,7 @@ import p from "../../Assets/form-plane.png";
 import { FaTimes } from "react-icons/fa";
 import { BsSendFill } from "react-icons/bs";
 import hotel1 from '../../Assets/hotel1.webp';
-import textG from '../../Assets/form-goa-text.png'
+// import textG from '../../Assets/form-goa-text.png'
 import emailjs from '@emailjs/browser';
 
 function Card({ data }) {
@@ -201,14 +201,14 @@ function Card({ data }) {
               <p className="card-price-facilities">
                 {" "}
                 <span className="card-price-icon">
-                  <FaCheck></FaCheck>
+                  <FaCheck/>
                 </span>
                 Transport Available
               </p>
               <p className="card-price-facilities">
                 {" "}
                 <span className="card-price-icon">
-                  <FaCheck></FaCheck>
+                  <FaCheck/>
                 </span>
                 24x7 Online support
               </p>

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../TabandTour/press.css'
 import { useState } from 'react';
-import press from '../../Assets/press.avif'
+import press1 from '../../Assets/press.avif'
 import press2 from '../../Assets/hindustan.avif'
 import press3 from '../../Assets/Toi.avif'
 import press4 from '../../Assets/economics.avif'
@@ -18,7 +18,7 @@ return (
   <h1>What the press says</h1>
   <div className='press-main-container'>
     <div className="press-tabs flex">
-    <img onMouseEnter={() => handleHeadingHover(1)} className={`tab-image ${activeHeading === 1 ? 'active' : ''}`} src={press} alt=""/>
+    <img onMouseEnter={() => handleHeadingHover(1)} className={`tab-image ${activeHeading === 1 ? 'active' : ''}`} src={press1} alt=""/>
     <img onMouseEnter={() => handleHeadingHover(2)} className={`tab-image2 ${activeHeading === 2 ? 'active' : ''}`} src={press2} alt=""/>
     <img onMouseEnter={() => handleHeadingHover(3)} className={`tab-image3 ${activeHeading === 3 ? 'active' : ''}`} src={press3} alt=""/>
     <img onMouseEnter={() => handleHeadingHover(4)} className={`tab-image4 ${activeHeading === 4 ? 'active' : ''}`} src={press4} alt=""/>

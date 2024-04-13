@@ -36,14 +36,14 @@ function Navbar() {
           
           <Link to='/'>
           <div className="navbar-links flex">
-           <IoIosHome></IoIosHome>
+           <IoIosHome/>
            {/* <p>Explore</p> */}
           </div>
           </Link>
 
           <Link to='category/International'>
           <div className="navbar-links flex">
-           <FaPlaneDeparture></FaPlaneDeparture>
+           <FaPlaneDeparture/>
            {/* <p>International</p> */}
           </div>
           </Link>
@@ -51,21 +51,21 @@ function Navbar() {
 
           <Link to='/testimonial'>
           <div className="navbar-links flex">
-           <FaRegHeart></FaRegHeart>
+           <FaRegHeart/>
            {/* <p>Testimonial</p> */}
           </div>
           </Link>
 
           <Link to='category/Domestic'>
           <div className="navbar-links flex">
-        <MdOutlineHolidayVillage></MdOutlineHolidayVillage>
+        <MdOutlineHolidayVillage/>
            {/* <p>Domestic</p> */}
           </div>
           </Link>
 
           <Link to='/contact'>
           <div className="navbar-links flex">
-           <FaPhoneAlt></FaPhoneAlt>
+           <FaPhoneAlt/>
            {/* <p>Call Us</p> */}
           </div>
           </Link>

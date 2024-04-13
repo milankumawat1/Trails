@@ -2,15 +2,15 @@ import React from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import "../Categories/Categories-css/category.css";
 import { useState } from "react";
-import singapore from "../../Assets/singapore.webp";
+import singapore from "../../Assets/singapore.jpg";
 import { Link } from "react-router-dom";
-import bali from '../../Assets/bali.webp'
-import dubai from '../../Assets/dubai.webp'
-import andaman from '../../Assets/Andaman.webp'
-import vietnam from '../../Assets/vietnam.webp'
-import srilanka from '../../Assets/Srilanka.webp'
-import thailand from '../../Assets/thailand.webp'
-import maldives from '../../Assets/Maldives.webp'
+import bali from '../../Assets/bali.jpg'
+import dubai from '../../Assets/dubai.jpg'
+import andaman from '../../Assets/Andaman.jpg'
+import vietnam from '../../Assets/vietnam.jpg'
+import srilanka from '../../Assets/Srilanka.jpg'
+import thailand from '../../Assets/thailand.jpg'
+import maldives from '../../Assets/Maldives.jpg'
 
 const Data = [
   {
