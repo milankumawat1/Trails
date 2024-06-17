@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../Assets/logo.svg'
 import travel from '../../Assets/travelmanagement.png'
 import about from '../../Assets/background.svg'
+import LazyLoading from 'react-lazyload'
 import './about.css'
 
 function Aboutus() {

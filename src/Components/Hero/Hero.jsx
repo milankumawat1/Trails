@@ -3,13 +3,16 @@ import background from "../../Assets/main-background.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import fagoogle from "../../Assets/fa-google.avif";
+import LazyLoad from 'react-lazyload';
 import "../Hero/hero.css";
 
 function Hero() {
   return (
     <div className="hero">
       <div className="hero-container flex">
-        <img className="background" src={background} alt="background" />
+      <LazyLoad className="background" height={200} offset={500} once={true}>
+        <img className="back-photo" src={background} alt="background" />
+        </LazyLoad>
         <h1 className="hero-head">Plan Your Next Hassle free holiday</h1>
       </div>
       <div className="hero-bottom flex">
