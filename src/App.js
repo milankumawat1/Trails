@@ -1,10 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
-import Publicroute from './routes/Publicroute';
+import Publicroutes from './routes/Publicroutes';
 
 function App() {
   return (
-    <div className='App'>
-  <Publicroute></Publicroute>
+    <div className="App">
+      <Publicroutes></Publicroutes>
     </div>
   );
 }
